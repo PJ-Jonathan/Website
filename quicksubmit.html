@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Quick Submit</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class = "container-fluid">
+<div class="jumbotron">
+	<h1>Quick Submit</h1> 
+</div>
+<div class="row">
+	<ul class="nav nav-tabs" role="tablist">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li class="active"><a href="quicksubmit.html">Quick Submit</a></li>
+		<li><a href="contact.html">Contact</a></li>        
+    </ul>
+</div>
+<br>
+<button type="button" class="btn btn-warning">How to Report An Observation Accurately</button>
+<br><br><br>
+<form role="form">
+  <h3>Date/Time</h3>
+  <div class="form-group">
+    <label for="name">Date of Observation</label>
+    <input type="date" class="form-control" id="date">
+  </div>
+  <div class="form-group">
+    <label for="name">Time of Observation</label>
+    <input type="time" class="form-control" id="time">
+  </div>
+  <br><h3>Location</h3>
+  <button type="button" class="btn btn-primary" onclick="getLocation()">Use Current Location</button><br><br>
+  <div class="form-group">
+    <label for="name">Latitude of Observation</label>
+    <input type="number" class="form-control" id="lat">
+  </div>
+  <div class="form-group">
+    <label for="name">Longitude of Observation</label>
+    <input type="number" class="form-control" id="lon">
+  </div>
+  <br><h3>Photo</h3>
+  <button type="button" class="btn btn-primary">Attach A Photo</button><br><br>
+  <br><h3>Comments</h3>
+  <div class="form-group">
+    <textarea class="form-control" rows="7"></textarea>
+  </div>
+  <br><h3>Type of Observation</h3>
+  <div class="checkbox">
+  <label><input type="checkbox" value="">Sighting</label>
+  </div>
+  <div class="checkbox">
+  <label><input type="checkbox" value="">Paw Print</label>
+  </div>
+  <div class="checkbox">
+  <label><input type="checkbox" value="">Hair</label>
+  </div>
+  <div class="checkbox">
+  <label><input type="checkbox" value="">Scat</label>
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>
