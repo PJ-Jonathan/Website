@@ -4,7 +4,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 $password = hash("sha512",$password);
-$sql = 'SELECT * FROM users WHERE email="$email"'
+$sql = 'SELECT * FROM users WHERE email="'.$email.'"';
 $result = $conn->query($sql);
 echo $result;
 $sql = 'INSERT INTO users (name,email, password)
