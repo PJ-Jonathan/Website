@@ -1,12 +1,13 @@
 <?php
+echo "Starting";
+require(db.php);
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
-echo $name;
-echo $email;
-echo $message;
+$sql = "INSERT INTO contact (name,email, message)
+VALUES ('$name','$email','$message');";
 
-
+echo "Submited";
 
 ?>
