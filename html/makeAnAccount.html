@@ -31,9 +31,12 @@
 </div>
 </body>
 <script type="text/javascript">
-var taken = location.search.split('taken=')[1] ? location.search.split('taken=')[1] : 'false';	
-if(taken){
-	alert("TAKEN");
+alert(getParameterByName(taken));
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 </script>
 </html>
