@@ -22,7 +22,7 @@ if($conn->query($sql) or die(mysqli_error($conn))){
 <div class = "page-header">
 	<h1>Submission Successful</h1> 
 	<script type="text/javascript">
-	window.setTimeout(function(){window.locationlhref = "../index.html";},2000);
+	window.setTimeout(function(){window.location.href = "../index.html";},2000);
 	</script>
 </div>
   ';
