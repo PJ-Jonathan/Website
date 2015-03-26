@@ -20,9 +20,8 @@ if($conn->query($sql) or die(mysqli_error($conn))){
 </head>
 <body>
 <div class = "page-header">
-<div class="jumbotron">
 	<h1>Submission Successful</h1> 
-</div>>
+</div>
   ';
 }else{
   echo "Unable To Submit Please Try Again";
