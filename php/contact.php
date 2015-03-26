@@ -19,7 +19,7 @@ if($conn->query($sql) or die(mysqli_error($conn))){
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class = "container-fluid">
+<div class = "page-header">
 <div class="jumbotron">
 	<h1>Submission Successful</h1> 
 </div>>
