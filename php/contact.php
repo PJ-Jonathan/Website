@@ -6,7 +6,12 @@ $message = $_POST["message"];
 
 $sql = 'INSERT INTO contact (name,email, message)
 VALUES ('.$name.','.$email.','.$message.')';
-$conn->query($sql)
-echo "Submited";
+if($conn->query($sql)==TRUE){
+  echo "Submited";
+}else{
+  echo "Failure";
+}
+
+
 
 ?>
