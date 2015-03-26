@@ -21,6 +21,9 @@ if($conn->query($sql) or die(mysqli_error($conn))){
 <body>
 <div class = "page-header">
 	<h1>Submission Successful</h1> 
+	<script type="text/javascript">
+	setTimeout(function(){window.locationlhref = "../index.html";},2000);
+	</script>
 </div>
   ';
 }else{
