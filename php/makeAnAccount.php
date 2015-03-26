@@ -1,4 +1,5 @@
 <?php
+echo "Starting";
 require("db.php");
 $name = $_POST["name"];
 $email = $_POST["email"];
