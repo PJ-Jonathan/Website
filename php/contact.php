@@ -9,9 +9,13 @@ $sql = 'INSERT INTO contact (name,email, message)
 VALUES ("'.$name.'","'.$email.'","'.$message.'")';
 
 if($conn->query($sql) or die(mysqli_error($conn))){
-  echo "Submited";
+  echo '
+  <script type="text/javascript">
+  window.location.href = "../index.html";
+  </script>
+  ';
 }else{
-  echo "Failure";
+  echo "Unable To Submit Please Try Again";
 }
 
 
