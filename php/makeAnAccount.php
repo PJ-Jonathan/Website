@@ -16,7 +16,7 @@ if($numRow==0){
   echo "Unable To Submit Please Try Again";
   }
 }else{
-  echo '<script type="text/javascript">window.location.href="/html/makeAnAccount.html?taken=true&name=".$name.</script>';
+  echo '<script type="text/javascript">window.location.href="/html/makeAnAccount.html?taken=true&name="'.$name.'</script>';
 }
 
 ?>
