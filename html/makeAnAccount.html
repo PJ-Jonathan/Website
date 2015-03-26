@@ -35,6 +35,7 @@
 var taken = getParameterByName("taken");
 if(taken=="true"){
 	document.getElementById("error").innerHTML = "A User With That Email Already Exist";
+	document.getElementById("name").value = getParameterByName("name");
 }
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
