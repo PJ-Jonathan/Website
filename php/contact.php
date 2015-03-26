@@ -1,6 +1,5 @@
 <?php
-include(db.php);
-global $conn;
+require("db.php");
 /*$servername = "localhost";
 $username = "ebear";
 $password = "C4WfVQdEncPt4Ayp";
