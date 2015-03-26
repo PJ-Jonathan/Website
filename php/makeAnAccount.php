@@ -8,7 +8,7 @@ $dob = 0;
 $sql = 'INSERT INTO users (name,email, password)
 VALUES ("'.$name.'","'.$email.'","'.$password.'")';
 if($conn->query($sql) or die(mysqli_error($conn))){
-echo 'Success';
+echo '<script type="text/javascript">window.location.href="/html/login.html"</script>';
 }else{
 echo "Unable To Submit Please Try Again";
 }
