@@ -1,5 +1,5 @@
 <?php
-require_once(db.php);
+include_once(db.php);
 /*$servername = "localhost";
 $username = "ebear";
 $password = "C4WfVQdEncPt4Ayp";
