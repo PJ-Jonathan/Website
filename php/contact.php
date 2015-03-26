@@ -1,5 +1,6 @@
 <?php
 include_once(db.php);
+global $conn;
 /*$servername = "localhost";
 $username = "ebear";
 $password = "C4WfVQdEncPt4Ayp";
