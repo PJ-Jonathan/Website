@@ -13,6 +13,7 @@
 	<h1>Make An Account</h1> 
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "../index.html";'>Home <span class="glyphicon glyphicon-home"></button><br><br>
+<h3 style="color:Red" id="error"></h3>
 <form role="form" action = "../php/makeAnAccount.php" method = "POST">
   <div class="form-group">
     <label for="name">Name</label>
@@ -31,7 +32,10 @@
 </div>
 </body>
 <script type="text/javascript">
-alert(getParameterByName("taken"));
+var taken = getParameterByName("taken");
+if(taken){
+	document.getElementById("error").innerHTML = "A User With That Email Already Exist";
+}
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
