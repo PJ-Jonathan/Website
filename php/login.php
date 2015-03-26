@@ -1,4 +1,5 @@
 <?php
+require("db.php");
 $username = $_POST["username"];
 $password  = $_POST["pwd"];
 echo "About to Hash";
