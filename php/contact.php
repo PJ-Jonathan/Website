@@ -10,9 +10,19 @@ VALUES ("'.$name.'","'.$email.'","'.$message.'")';
 
 if($conn->query($sql) or die(mysqli_error($conn))){
   echo '
-  <script type="text/javascript">
-  window.location.href = "../index.html";
-  </script>
+<head>
+<title>NY eBear</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class = "container-fluid">
+<div class="jumbotron">
+	<h1>Submission Successful</h1> 
+</div>>
   ';
 }else{
   echo "Unable To Submit Please Try Again";
