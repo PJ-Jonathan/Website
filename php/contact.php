@@ -19,12 +19,14 @@ if($conn->query($sql) or die(mysqli_error($conn))){
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class = "page-header">
+<center><div class = "page-header">
 	<h1>Submission Successful</h1> 
 	<script type="text/javascript">
 	window.setTimeout(function(){window.location.href = "../index.html";},2000);
 	</script>
-</div>
+</div></center>
+<center><h2>Redirecting...</h2></center>
+
   ';
 }else{
   echo "Unable To Submit Please Try Again";
