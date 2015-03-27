@@ -45,8 +45,9 @@
 	    }
 	}
 	function showPosition(position) {
-	    x.innerHTML = "Latitude: " + position.coords.latitude +
-	    "<br>Longitude: " + position.coords.longitude;
+	    document.getElementById("lat").innerHTML = position.coords.latitude;
+	    document.getElementById("lon").innerHTML = position.coords.longitude;
+	    
 	}
   </script>
   <div class="form-group">
