@@ -13,7 +13,8 @@ if($numRow==1){
   $_SESSION["username"] = $username;
   $_SESSION["key"] = $key;
   echo $_SESSION["username"];
-  echo   $_SESSION["key"];
+  $sql = 'INSERT INTO users WHERE username="'.$username.'"(key) VALUES ('.$key.')';
+  $result = $conn->query($sql) or die(mysqli_error($conn));
 }else{
 echo '<script>window.location.href="/html/login.html?wrongPass=true&&name='.$username.'"</script>';
 }
