@@ -32,6 +32,7 @@
 var wrongPass = getParameterByName("wrongPass");
 if(wrongPass=="true"){
 document.getElementById("error").innerHTML = "The Username Or Password You Entered Is Not Correct";
+document.getElementById("username").value = getParameterByName("name");
 }
 function getParameterByName(name) {
 name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
