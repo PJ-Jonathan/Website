@@ -9,7 +9,7 @@ $numRow = $result->num_rows;
 if($numRow==1){//Failed
 echo "Auth";
 }else{
-echo '<script>window.location.href="/html/login.html?wrongPass=true"</script>';
+echo '<script>window.location.href="/html/login.html?wrongPass=true&&name='.$username.'"</script>';
 }
 
 ?>
