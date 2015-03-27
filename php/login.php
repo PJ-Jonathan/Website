@@ -7,9 +7,13 @@ $sql = 'SELECT * FROM users WHERE email="'.$username.'" AND password ="'.$passwo
 $result = $conn->query($sql) or die(mysqli_error($conn));
 $numRow = $result->num_rows;
 if($numRow==1){
-$key = str_shuffle("0123456789qwertyuiopasdfghjklzxcvbnm!@#$%^&*()?QWERTYUIOPZXCVBNM");
-$key = hash("sha512",$key);
-echo $key;
+  $key = str_shuffle("0123456789qwertyuiopasdfghjklzxcvbnm!@#$%^&*()?QWERTYUIOPZXCVBNM");
+  $key = hash("sha512",$key);
+  session_start();
+  $_SESSION["username"] = $username;
+  $_SESSION["key"] = $key;
+  echo $_SESSION["username"];
+  echo   $_SESSION["key"];
 }else{
 echo '<script>window.location.href="/html/login.html?wrongPass=true&&name='.$username.'"</script>';
 }
