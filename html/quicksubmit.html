@@ -34,7 +34,21 @@
     <input type="time" class="form-control" id="time">
   </div>
   <br><h3>Location</h3>
-  <button type="button" class="btn btn-primary" onclick="getLocation()">Use Current Location</button><br><br>
+  <button type="button" class="btn btn-primary" onclick="getLocation()" id="useLocation">Use Current Location</button><br><br>
+  <script>
+	var x = document.getElementById("useLocation");
+	function getLocation() {
+	    if (navigator.geolocation) {
+	        navigator.geolocation.getCurrentPosition(showPosition);
+	    } else {
+	        x.innerHTML = "Geolocation is not supported by this browser.";
+	    }
+	}
+	function showPosition(position) {
+	    x.innerHTML = "Latitude: " + position.coords.latitude +
+	    "<br>Longitude: " + position.coords.longitude;
+	}
+  </script>
   <div class="form-group">
     <label for="name">Latitude of Observation</label>
     <input type="number" class="form-control" id="lat">
