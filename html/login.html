@@ -14,6 +14,7 @@
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "../index.html";'>Home <span class="glyphicon glyphicon-home"></button><br><br>
 <a href="makeAnAccount.html">Don't Have An Account?</a><br><br>
+<h3 style="color:Red" id="error"></h3>
 <form role="form" action="../php/login.php" method="POST">
   <div class="form-group">
     <label for="username">Email</label>
@@ -27,4 +28,16 @@
 </form>
 </div>
 </body>
+<script>
+var wrongPass = getParameterByName("wrongPass");
+if(wrongPass=="true"){
+document.getElementById("error").innerHTML = "The Username Or Password You Entered Does Not Exist";
+}
+function getParameterByName(name) {
+name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+results = regex.exec(location.search);
+return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
 </html>
