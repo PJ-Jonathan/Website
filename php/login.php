@@ -12,7 +12,7 @@ if($numRow==1){
   session_start();
   $_SESSION["username"] = $username;
   $_SESSION["key"] = $key;
-  $sql = 'UPDATE users SET key="'.$key.'" WHERE username="'.$username.'"';
+  $sql = 'UPDATE users SET key="'.$key.'" WHERE email="'.$username.'"';
   $conn->query($sql) or die(mysqli_error($conn));
 }else{
 echo '<script>window.location.href="/html/login.html?wrongPass=true&&name='.$username.'"</script>';
