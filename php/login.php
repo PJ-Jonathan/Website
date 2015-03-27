@@ -14,7 +14,7 @@ if($numRow==1){
   $_SESSION["key"] = $key;
   $sql = 'UPDATE users SET userkey="'.$key.'" WHERE email="'.$username.'"';
   $conn->query($sql) or die(mysqli_error($conn));
-  echo '<script>window.location.href="/html/homepage.html</script>"';
+  echo '<script>window.location.href="/html/homepage.html</script>';
 }else{
 echo '<script>window.location.href="/html/login.html?wrongPass=true&&name='.$username.'"</script>';
 }
