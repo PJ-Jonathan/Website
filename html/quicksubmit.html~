@@ -32,13 +32,13 @@
 	<h2>Submit hair collection data</h2>
 	<p>The deal with hair collection...</p>
 	<img src="../res/bearHair" class=".img-responsive" alt="Bear Hair" width="100%">
-	<br><br><button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="hair.html"'>Submit Hair Collection Data</button>
+	<br><br><button type="button" class="btn btn-primary btn-lg">Submit Hair Collection Data</button>
   <br><br><br></center></div>
   <div class="col-sm-4" id="trailCamera"><center>
 	<h2>Submit trail camera data</h2>
 	<p>The deal with trail cameras..</p>
 	<img src="../res/trailCamera.png" class=".img-responsive" alt="Trail Camera" width="100%">
-	<br><br><button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="trailCamera.html"'>Submit Trail Camera Data</button>
+	<br><br><button type="button" class="btn btn-primary btn-lg">Submit Trail Camera Data</button>
   <br><br><br></center></div>
 </div>
 
