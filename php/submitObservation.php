@@ -1,7 +1,11 @@
 <?php
  require("db.php");
  $date = $_POST["date"];
- $sql = 'INSERT INTO Observations_1 (date) VALUES ("'.$date.'")';
+ $time = $_POST["time"];
+ $latitude = $_POST["latitude"];
+ $longitude =$_POST["longitude"];
+ $comments =$_POST["comments];
+ $sql = 'INSERT INTO Observations_1 (date,time,latitude,longitude,comments) VALUES ("'.$date.'","'.$time.'","'$latitude'","'$ongitude'","'$comments'")';
  $conn->query($sql) or die(mysqli_error($conn));
 
 
