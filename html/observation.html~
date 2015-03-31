@@ -12,7 +12,7 @@
 <div class="jumbotron">
 <h1>Observation</h1>
 </div>
-<button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> Back</button><br><br>
+<button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
 <button type="button" class="btn btn-warning">How to Report An Observation Accurately</button>
 <br>
 <form role="form">
