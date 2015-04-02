@@ -3,6 +3,7 @@ require("db.php");
 
 $email = $_POST["email"];
 $t=$email."-".time()."-".basename($_FILES["fileToUpload"]["name"]);
+$picture_url = $t;
 //$t = $email."-".$t."-". basename($_FILES["fileToUpload"]["name"];
 $target_dir = "/var/www/upload/";
 //$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -59,7 +60,7 @@ $longitude =$_POST["longitude"];
 $comments =$_POST["comments"];
 $email = $_POST["email"];
 $type = $_POST["type"];
-$sql = 'INSERT INTO Observations_1 (date,time,latitude,longitude,comments,email,type) VALUES ("'.$date.'","'.$time.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$email.'","'.$type.'")';
+$sql = 'INSERT INTO Observations_1 (date,time,latitude,longitude,comments,email,type,picture_url) VALUES ("'.$date.'","'.$time.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$email.'","'.$type.'","'.$picture_url.'")';
 $conn->query($sql) or die(mysqli_error($conn));
 //echo '<script>window.location.href="../html/submissionComplete.html"</script>'
 
