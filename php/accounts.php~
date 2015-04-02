@@ -1,4 +1,5 @@
 <?php
+require("db.php");
 function check($username, $key){
 	$sql = 'SELECT * FROM users WHERE email="'.$username.'" AND userkey ="'.$key.'"';
 	echo "About to Query";	
