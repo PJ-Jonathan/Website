@@ -3,6 +3,7 @@ session_start();
 require("accounts.php");
 $username = $_SESSION["username"];
 $key = $_SESSION["key"];
+echo "About to check";
 echo check($username,$key);
 echo "<br>";
 echo check($username,"nottherightkey");
