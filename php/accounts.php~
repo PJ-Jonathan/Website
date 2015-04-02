@@ -8,7 +8,7 @@ function check($username, $key){
 	    echo "True";
 	    return TRUE;
 	}else{
-		echo 
+		echo "False";
 	    return FALSE;
 	}
 }
