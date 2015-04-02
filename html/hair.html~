@@ -13,9 +13,15 @@
 <h1>Hair Collection</h1>
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning">How to Report Hair Collection Accurately</button>
+<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportHair.html"'>How to Report Hair Collection Accurately</button>
 <br>
 <form role="form">
+
+<h3>Email</h3>
+<div class="form-group">
+<input type="email" class="form-control" id="email" name="email">
+</div>
+<br>
 <h3>Date/Time</h3>
 <div class="form-group">
 <label for="name">Date of Collection</label>
@@ -29,7 +35,7 @@
 <div class="form-group">
 <input type="number" class="form-control" id="lat">
 </div>
-<br><button type="button" class="btn btn-primary">Attach A Photo</button><br><br>
+<br><button type="button" class="btn btn-primary">Attach A Photo</button><br>
 <br><h3>Comments</h3>
 <div class="form-group">
 <textarea class="form-control" rows="7"></textarea>
