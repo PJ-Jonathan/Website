@@ -4,7 +4,7 @@ $username = $_SESSION["username"];
 $key = $_SESSION["key"];
 echo check($username,$key);
 echo "<br>";
-echo chekc($username,"nottherightkey");
+echo check($username,"nottherightkey");
 
 //$sql = 'UPDATE users SET userkey="'.$key.'" WHERE email="'.$username.'"';
 
