@@ -1,6 +1,8 @@
 <?php
 session_start();
+echo "Started";
 require("accounts.php");
+echo "getting data";
 $username = $_SESSION["username"];
 $key = $_SESSION["key"];
 echo "About to check";
