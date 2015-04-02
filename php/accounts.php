@@ -1,8 +1,8 @@
 <?php
 require("db.php");
 function check($username, $key){
-$username="pjfin123";
-$key="dfsa";
+	$username="pjfin123";
+	$key="dfsa";
 	$sql = 'SELECT * FROM users WHERE email="'.$username.'" AND password ="'.$key.'"';
 	echo "About to Query";	
 	$result = $conn->query($sql) or die(mysqli_error($conn));
