@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo "Starting";
 require("accounts.php");
 echo "Required";

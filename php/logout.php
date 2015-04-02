@@ -1,12 +1,8 @@
 <?php
 session_start();
-echo "Starting";
 require("accounts.php");
-echo "Required";
 $username = $_SESSION["username"];
 $key = $_SESSION["key"];
-echo $username;
-echo $key;
 echo check($username,$key);
 echo "<br>";
 echo check($username,"nottherightkey");
