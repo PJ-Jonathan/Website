@@ -13,8 +13,8 @@
 <h1>Submit Trail Camera Data</h1>
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportHair.html"'>How to Report Trail Camera Data Accurately</button>
-<br>
+<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportTrailCamera.html"'>How to Report Trail Camera Data Accurately</button>
+<br><br>
 <form role="form" action="../php/submitTrailCam.php" method="POST">
 <br>
 <h3>Email</h3>
@@ -25,21 +25,46 @@
 <h3>Date/Time of Camera Operation</h3>
 <div class="form-group">
 <label for="name">Beginning Date</label>
-<input type="date" class="form-control" id="date" name="date">
+<input type="date" class="form-control" id="date" name="sdate">
 </div>
 <div class="form-group">
 <label for="name">Beginning Time</label>
-<input type="time" class="form-control" id="time" name="time">
+<input type="time" class="form-control" id="time" name="stime">
 </div>
 <hr size="8"/>
 <div class="form-group">
 <label for="name">End Date</label>
-<input type="date" class="form-control" id="date" name="date">
+<input type="date" class="form-control" id="date" name="edate">
 </div>
 <div class="form-group">
 <label for="name">End Time</label>
-<input type="time" class="form-control" id="time" name="time">
-</div><br>
+<input type="time" class="form-control" id="time" name="etime">
+</div>
+<br><h3>Location</h3>
+<button type="button" class="btn btn-primary" onclick="getLocation()" id="useLocation">Use Current Location</button><br><br>
+<script>
+var x = document.getElementById("useLocation");
+function getLocation() {
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+x.innerHTML = "Geolocation is not supported by this browser.";
+}
+}
+function showPosition(position) {
+document.getElementById("lat").value = position.coords.latitude;
+document.getElementById("lon").value = position.coords.longitude;
+}
+</script>
+<div class="form-group">
+<label>Latitude of Observation</label>
+<input type="text" class="form-control" id="lat" name="latitude">
+</div>
+<div class="form-group">
+<label>Longitude of Observation</label>
+<input type="text" class="form-control" id="lon" name="longitude">
+</div>
+<br>
 <h3>Bear Sightings</h3>
 <h5>Enter any bear sightings in the format "6/20/15 5:00pm, 6/21 4:25am". Remember it is very important that you submit when your camera was operational even if you did not see any bears.<h5>
 <div class="form-group">

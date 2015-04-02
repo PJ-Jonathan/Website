@@ -1,0 +1,24 @@
+
+
+<html>
+<head>
+<title>Trail Cameras</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class = "container-fluid">
+<div class="jumbotron">
+<h1>How to Report Trail Camera Data</h1>
+</div>
+
+<button type="button" class="btn btn-default" onclick='window.location.href = "trailCamera.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+<p>Some information about how to report trail camera data.</p>
+</div>
+</body>
+</html>
+
+
