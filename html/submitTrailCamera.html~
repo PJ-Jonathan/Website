@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Submit Hair Collection</title>
+<title>Trail Camera</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -10,7 +10,7 @@
 <body>
 <div class = "container-fluid">
 <div class="jumbotron">
-<h1>Hair Collection</h1>
+<h1>Submit Trail Camera Data</h1>
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
 <button type="button" class="btn btn-warning" onclick='window.location.href="howToReportHair.html"'>How to Report Hair Collection Accurately</button>
@@ -35,7 +35,6 @@
 <div class="form-group">
 <input type="number" class="form-control" id="siteid" name="siteid">
 </div>
-<br><h3>Photo</h3>
 <br><button type="button" class="btn btn-primary">Attach A Photo</button><br>
 <br><h3>Comments</h3>
 <div class="form-group">
@@ -46,3 +45,4 @@
 </div>
 </body>
 </html>
+
