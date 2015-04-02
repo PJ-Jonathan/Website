@@ -16,6 +16,12 @@
 <button type="button" class="btn btn-warning">How to Report An Observation Accurately</button>
 <br>
 <form role="form" action="../php/submitObservation.php" method="POST">
+
+<h3>Email</h3>
+<div class="form-group">
+<input type="email" class="form-control" id="email" name="email">
+</div>
+<br><br>
 <h3>Date/Time</h3>
 <div class="form-group">
 <label>Date of Observation</label>
