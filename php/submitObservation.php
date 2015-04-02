@@ -2,7 +2,7 @@
 require("db.php");
 
 $email = $_POST["email"];
-$t=time().basename($_FILES["fileToUpload"]["name"];
+$t=time()."-".$email."-".basename($_FILES["fileToUpload"]["name"]);
 //$t = $email."-".$t."-". basename($_FILES["fileToUpload"]["name"];
 $target_dir = "/var/www/upload/";
 //$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
