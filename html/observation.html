@@ -15,7 +15,7 @@
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
 <button type="button" class="btn btn-warning" onclick='window.location.href="howToReportAnObservation.html"'>How to Report An Observation Accurately</button>
 <br><br>
-<form role="form" action="../php/submitObservation.php" method="POST">
+<form role="form" action="../php/submitObservation.php" method="POST" enctype="multipart/form-data">
 
 <h3>Email</h3>
 <div class="form-group">
@@ -56,23 +56,23 @@ document.getElementById("lon").value = position.coords.longitude;
 <input type="text" class="form-control" id="lon" name="longitude">
 </div>
 <br><h3>Photo</h3>
-<button type="button" class="btn btn-primary">Attach A Photo</button><br><br>
+<input type="file" name="fileToUpload" id="fileToUpload">
 <br><h3>Comments</h3>
 <div class="form-group">
 <textarea class="form-control" rows="7" name="comments"></textarea>
 </div>
 <br><h3>Type of Observation</h3>
 <div class="checkbox">
-<label><input type="checkbox" name="type" value="Sighting">Sighting</label>
+<label><input type="radio" name="type" value="Sighting">Sighting</label>
 </div>
 <div class="checkbox">
-<label><input type="checkbox" name="type" value="Paw Print">Paw Print</label>
+<label><input type="radio" name="type" value="Paw Print">Paw Print</label>
 </div>
 <div class="checkbox">
-<label><input type="checkbox" name="type" value="Hair">Hair</label>
+<label><input type="radio" name="type" value="Hair">Hair</label>
 </div>
 <div class="checkbox">
-<label><input type="checkbox" name="type" value="Scat">Scat</label>
+<label><input type="radio" name="type" value="Scat">Scat</label>
 </div>
 <br><br>
 <button type="submit" class="btn btn-primary">Submit</button>
