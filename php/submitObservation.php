@@ -3,10 +3,10 @@ require("db.php");
 
 $email = $_POST["email"];
 $t=time();
-$t = $email."-".$t."-". basename($_FILES["fileToUpload"]["name"];
+//$t = $email."-".$t."-". basename($_FILES["fileToUpload"]["name"];
 $target_dir = "/var/www/upload/";
 //$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$target_file = $target_dir . $t;
+$target_file = $target_dir.$t;
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
