@@ -1,9 +1,14 @@
 <?php
  require("db.php");
+ $date = $_POST["date"];
  echo $date;
+ $time = $_POST["time"];
  echo $tiem;
+ $latitude = $_POST["latitude"];
  echo $latitude;
+ $longitude =$_POST["longitude"];
  echo $longitude;
+ $comments =$_POST["comments"];
  echo $comments;
 
  
