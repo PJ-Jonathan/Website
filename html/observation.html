@@ -16,13 +16,19 @@
 <button type="button" class="btn btn-warning">How to Report An Observation Accurately</button>
 <br>
 <form role="form" action="../php/submitObservation.php" method="POST">
+
+<h3>Email</h3>
+<div class="form-group">
+<input type="email" class="form-control" id="email" name="email">
+</div>
+
 <h3>Date/Time</h3>
 <div class="form-group">
-<label for="name">Date of Observation</label>
+<label>Date of Observation</label>
 <input type="date" class="form-control" id="date" name="date">
 </div>
 <div class="form-group">
-<label for="name">Time of Observation</label>
+<label>Time of Observation</label>
 <input type="time" class="form-control" id="time" name="time">
 </div>
 <br><h3>Location</h3>
@@ -42,12 +48,12 @@ document.getElementById("lon").value = position.coords.longitude;
 }
 </script>
 <div class="form-group">
-<label for="name">Latitude of Observation</label>
-<input type="number" class="form-control" id="lat" name="latitude">
+<label>Latitude of Observation</label>
+<input type="text" class="form-control" id="lat" name="latitude">
 </div>
 <div class="form-group">
-<label for="name">Longitude of Observation</label>
-<input type="number" class="form-control" id="lon" name="longitude">
+<label>Longitude of Observation</label>
+<input type="text" class="form-control" id="lon" name="longitude">
 </div>
 <br><h3>Photo</h3>
 <button type="button" class="btn btn-primary">Attach A Photo</button><br><br>
