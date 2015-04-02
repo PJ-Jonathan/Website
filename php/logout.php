@@ -9,6 +9,7 @@ $result = $conn->query($sql) or die(mysqli_error($conn));
 $numRow = $result->num_rows;
 if($numRow==1){
     $sql = 'UPDATE users SET userkey=" " WHERE email="'.$username.'"';
+    $result = $conn->query($sql) or die(mysqli_error($conn));
 }else{
 }
 $_SESSION["username"] = "";
