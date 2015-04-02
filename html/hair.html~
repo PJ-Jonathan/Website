@@ -14,7 +14,7 @@
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
 <button type="button" class="btn btn-warning" onclick='window.location.href="howToReportHair.html"'>How to Report Hair Collection Accurately</button>
-<br>
+<br><br>
 <form role="form" action="../php/submitHair.php" method="POST">
 
 <h3>Email</h3>

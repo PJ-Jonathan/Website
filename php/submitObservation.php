@@ -43,7 +43,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        echo '<script>window.location.href="../html/submissionComplete.html"</script>';
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
@@ -62,7 +62,7 @@ $email = $_POST["email"];
 $type = $_POST["type"];
 $sql = 'INSERT INTO Observations_1 (date,time,latitude,longitude,comments,email,type,picture_url) VALUES ("'.$date.'","'.$time.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$email.'","'.$type.'","'.$picture_url.'")';
 $conn->query($sql) or die(mysqli_error($conn));
-//echo '<script>window.location.href="../html/submissionComplete.html"</script>'
+
 
 
 ?>
