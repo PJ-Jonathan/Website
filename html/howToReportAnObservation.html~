@@ -13,8 +13,10 @@
 <h1>Observation</h1>
 </div>
 
-<button type="button" class="btn btn-default" onclick='window.location.href = "observation.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br>
-<p>Some information about how to report an observation</p>
+<button type="button" class="btn btn-default" onclick='window.location.href = "observation.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+<h3>You should submit an observation if you see a bear, its hair, pawprint, scat, or if you went to a wooded area and did not see a bear. The observations of people who went to a wooded area, and did not see a bear are particurally important because they allow us to see where there are actually more bears, and not just more people submitting data to us.</h3>
+<h3>To submit an observation fill out your email, and the date/time of the observation. For the location try to report the location in latitude/longitude as accurately as possible. The use current location button auto fills the latitude and longitude fields with your current location, and should only be used if you are actually where you made your observation. To find the latitude and longitude of an location go to <a href="http://www.maps.google.com">Google Maps</a>, find the location, right click, and then select "What's Here", and a dialogue box should appear with latitude and longitude.</h3>
+<h3> Finally attach a photo if you have one, and select the type of observation</h3>
 </div>
 </body>
-</html>
+</html> 
