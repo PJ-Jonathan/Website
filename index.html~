@@ -74,15 +74,23 @@
 		  </div>
 	</div>
 	<div class="col-sm-9 col-md-6">
-	<p><strong>Collecting black bear population data from citizen scientists in New York.</strong></p>
+	<p><strong>More detailed text explaining what the site is about.</strong></p>
 	<p>
-	Ny eBears collects data submitted by normal people about where they have, and have not seen bears. This black bear population study is being administered by 		Cornell University, and the data will be used by the DEC to help better inform bear population management in New York. The more data we recieve the more 		accuratly we will be able to determine the location and quantity of Black Bears in New York.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie quam quis sem ornare finibus. Duis ut tortor eros. 
+	Morbi porta eleifend tellus, nec posuere urna maximus nec. Duis ut ante imperdiet, ullamcorper velit a, placerat nisi. Nunc 
+	blandit mi et tristique tempus. Suspendisse malesuada auctor urna. Proin iaculis consectetur velit, vitae euismod eros 
+	tristique et. Pellentesque dignissim lorem ac sapien blandit, ac luctus diam ultrices. Nulla facilisi. Nulla porta commodo mi sed 
+	bibendum. Nam at sodales ex. In tristique turpis sed orci tempus ullamcorper. In pulvinar, erat in interdum pretium, massa est 
+	pharetra nunc, id lacinia orci dui sit amet est.
 	</p>
 	</div>
 </div>
 <br><br>
 <h1>How to Contribute</h1>
-<p>There are three different ways to submit...</p>
+<p>If you have come across a bear you can report it in two different ways. You can either create an account or you can do a quick submit. Creating an account is 
+not neccesary, however it allows you to keep track of your submissions, and have a chance at getting on the leaderboards. To do a quick submission click <a href="html/quicksubmit.html">here</a>,
+ and to 
+make an acccount click <a href="html/makeAnAccount.html">here<a/>.</p>
 </div>
 </body>
 </html>
