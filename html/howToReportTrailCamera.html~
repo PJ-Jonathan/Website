@@ -14,9 +14,8 @@
 <div class="jumbotron">
 <h1>How to Report Trail Camera Data</h1>
 </div>
-
 <button type="button" class="btn btn-default" onclick='window.location.href = "trailCamera.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<p>Some information about how to report trail camera data.</p>
+<h3>You should submit trail camera data if you have a trail camera in operation, even if it has not seen a Black bear.</h3>
 </div>
 </body>
 </html>
