@@ -56,7 +56,7 @@ document.getElementById("lon").value = position.coords.longitude;
 <input type="text" class="form-control" id="lon" name="longitude">
 </div>
 <br><h3>Photo</h3>
-<input id="input-4" type="file" multiple=true class="file-loading">
+<input type="file" name="fileToUpload" id="fileToUpload">
 <br><h3>Comments</h3>
 <div class="form-group">
 <textarea class="form-control" rows="7" name="comments"></textarea>
@@ -73,6 +73,9 @@ document.getElementById("lon").value = position.coords.longitude;
 </div>
 <div class="checkbox">
 <label><input type="radio" name="type" value="Scat">Scat</label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="None">None</label>
 </div>
 <br><br>
 <button type="submit" class="btn btn-primary">Submit</button>
