@@ -14,9 +14,18 @@
 </div>
 
 <button type="button" class="btn btn-default" onclick='window.location.href = "observation.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<h3>You should submit an observation if you see a bear, its hair, pawprint, scat, or if you went to a wooded area and did not see a bear. The observations of people who went to a wooded area, and did not see a bear are particurally important because they allow us to see where there are actually more bears, and not just more people submitting data to us.</h3>
-<h3>To submit an observation fill out your email, and the date/time of the observation. For the location try to report the location in latitude/longitude as accurately as possible. The use current location button auto fills the latitude and longitude fields with your current location, and should only be used if you are actually where you made your observation. To find the latitude and longitude of an location go to <a href="http://www.maps.google.com">Google Maps</a>, find the location, right click, and then select "What's Here", and a dialogue box should appear with latitude and longitude.</h3>
-<h3> Finally attach a photo if you have one, and select the type of observation</h3>
+<h3>If you have a smartphone, we recommend that you report observations with the NYeBear app. This provides us with more accurate and real-time data.
+If you do not have a smartphone, you may print out a paper version to take with you when you are out. We strongly recommend bringing a GPS unit to record your hike as GPS waypoints.</h3>
+<h3>You should submit observations/data regardless of whether or not you actually saw a bear or signs of bear.
+The observations of people who hiked and did not see a bear are particularly important because they allow researchers to see where there are bears and where there aren't bears.</h3>
+<h3>1) First, fill out your email so that we can contact you in case you/we have questions.<h3>
+<h3>2) Then, provide the date and start time of your hike or observation.</h3>
+<h3>3)At every ~15 minutes of your hike, provide the GPS location. This gives us information about both when you observed and did not observe bears.</h3>
+	<h3 style="padding: 0 80px;">a)For locations of your observations,  try to report the location in latitude/longitude as accurately as possible.</h3> 
+	<h3><span class="tab" style="padding: 0 80px;"></span>b)The "Use current location" button will automatically fill the latitude and longitude fields with your current location, and should only be used if you are actually where you made your observation.</h3>
+	<h3><span class="tab" style="padding: 0 80px;"></span>c)To find the latitude and longitude of an location go to Google Maps, find the location, right click, and then select "What's Here", and a dialogue box should appear with latitude and longitude.</h3>
+	<h3><span class="tab" style="padding: 0 80px;"></span>d)Finally attach a photo of your bear observation or sign if you have one, and select the type of observation. </h3>
+<h3> Remember it is very important that we get submissions even if you did not see a bear!</h3>
 </div>
 </body>
 </html> 
