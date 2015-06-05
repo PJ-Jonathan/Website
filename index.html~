@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <link href="res/icon.png" rel="shortcut icon">
@@ -11,18 +12,20 @@
 <body>
 <div class = "container-fluid">
 <div class="jumbotron">
-	<h1>New York eBear</h1> 
-    <p>Letting citizen scientists contribute to Black Bear research in New York.</p>
+	<h1>NY eBear:</h1> 
+    <p>A citizen science project to study black bears in NY</p>
 </div>
 <div class="row">
 	<ul class="nav nav-tabs" role="tablist">
-		<li class="active"><a href="index.html">Home</a></li>
-		<li><a href="html/about.html">About</a></li>
-		<li><a href="html/quicksubmit.html">Quick Submit</a></li>
-		<li><a href="html/contact.html">Contact</a></li>  
-		<li><a href="faq.html">FAQ</a></li>      
+		<li><a href="../index.html">Home</a></li>
+		<li class="active"><a href="about.html">About</a></li>
+		<li><a href="quicksubmit.html">Quick Submit</a></li>
+		<li><a href="recognizing.html">Recognizing Bear Signs</a></li>
+		<li><a href="faq.html">FAQ</a></li>  
+		<li><a href="contact.html">Contact</a></li>   
     </ul>
 </div>
+<br>
 <br>
 <!--
 <div class="row">
@@ -32,7 +35,17 @@
 <br><br>
 <div class="row">
 	<div class="col-sm-3 col-md-6">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" style = "width:100%;">
+<h3><strong>Welcome to NY eBear!</strong></h3>
+	<h3>Become a citizen scientist!</h3>
+	<h3>Join researchers studying the population size and distribution of black bears in New York.</h3>
+	<h3>
+	Explore the website to learn more and submit your data.
+	</h3>
+
+</div>
+
+		<div class="col-sm-9 col-md-6">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style = "width:100%;">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -70,15 +83,17 @@
 		  </a>
 		  </div>
 	</div>
-	<div class="col-sm-9 col-md-6">
-	<h3><strong>Welcome to NY eBear!</strong></h3>
-	<h3>
-	Be a citizen scientist and join researchers studying the population size and distribution of black bears in New York.
-	</h3>
-	<h3>
-	Explore the website to learn more and submit your data.
-	</h3>
+	
 	</div>
+
+
+
+
+
+
+
+
+
 </div>
 <br><br>
 

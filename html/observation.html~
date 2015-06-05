@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <title>Report Observation</title>
@@ -10,10 +11,10 @@
 <body>
 <div class = "container-fluid">
 <div class="jumbotron">
-<h1>Observation</h1>
+<h1> Submitting Hikes & Observations</h1>
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportAnObservation.html"'>How to Report An Observation Accurately</button>
+<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportAnObservation.html"'>How to Submit Hikes and Observations</button>
 <br><br>
 <form role="form" action="../php/submitObservation.php" method="POST" enctype="multipart/form-data">
 
@@ -22,13 +23,13 @@
 <input type="email" class="form-control" id="email" name="email">
 </div>
 <br>
-<h3>Date/Time</h3>
+<h3>Date and Time</h3>
 <div class="form-group">
-<label>Date of Observation</label>
+<label>Date of Observation/Hike</label>
 <input type="date" class="form-control" id="date" name="date">
 </div>
 <div class="form-group">
-<label>Time of Observation</label>
+<label>Time of Observation/Hike</label>
 <input type="time" class="form-control" id="time" name="time">
 </div>
 <br><h3>Location</h3>
@@ -47,19 +48,16 @@ document.getElementById("lat").value = position.coords.latitude;
 document.getElementById("lon").value = position.coords.longitude;
 }
 </script>
+<form action="http://google.com/maps">
+    <input type="submit" value="Use Google Maps">
+</form>
 <div class="form-group">
-<label>Latitude of Observation</label>
+<label>Latitude of Observation or Start of Hike</label>
 <input type="text" class="form-control" id="lat" name="latitude">
 </div>
 <div class="form-group">
-<label>Longitude of Observation</label>
+<label>Longitude of Observation or Start of Hike</label>
 <input type="text" class="form-control" id="lon" name="longitude">
-</div>
-<br><h3>Photo</h3>
-<input type="file" name="fileToUpload" id="fileToUpload">
-<br><h3>Comments</h3>
-<div class="form-group">
-<textarea class="form-control" rows="7" name="comments"></textarea>
 </div>
 <br><h3>Type of Observation</h3>
 <div class="checkbox">
@@ -77,9 +75,30 @@ document.getElementById("lon").value = position.coords.longitude;
 <div class="checkbox">
 <label><input type="radio" name="type" value="None">None</label>
 </div>
-<br><br>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<br><h3>How confident are you that it was of a black bear?</h3> 
+<div class="checkbox">
+<label><input type="radio" name="type" value="1 - Not confident at all"> 1 - Not confident at all</label>
 </div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="2 - Slightly Confident "> 2 - Slightly Confident</label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="3 - Somewhat Confident"> 3 - Somewhat Confident</label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="4 - Confident"> 4 - Confident</label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="5 - Very Confident"> 5 - Very Confident</label>
+</div>
+<br><h3>Submit Photos or Hiking Datasheet</h3>
+<input type="file" name="fileToUpload" id="fileToUpload">
+<br><h3>Comments about the Hike, Observation, or Photos:</h3>
+<h5> Did you observe other species of wildlife? </h5>
+<div class="form-group">
+<textarea class="form-control" rows="7" name="comments"></textarea>
+<br>
+<button type="submit" class="btn btn-primary">Submit My Observation/Hike</button>
+</form></div>
 </body>
 </html>
