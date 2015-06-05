@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <title>Trail Camera</title>
@@ -13,7 +14,7 @@
 <h1>Submit Trail Camera Data</h1>
 </div>
 <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportTrailCamera.html"'>How to Report Trail Camera Data Accurately</button>
+<button type="button" class="btn btn-warning" onclick='window.location.href="howToReportAnObservation.html#Data from Trail Cameras"'>How to Submit Data from Trail Cameras</button>
 <br>
 <form role="form" action="../php/submitTrailCam.php" method="POST"  enctype="multipart/form-data">
 <br>
@@ -22,16 +23,15 @@
 <input type="email" class="form-control" id="email" name="email">
 </div>
 <br>
-<h3>Date/Time of Camera Operation</h3>
+<h3> Period of Camera Operation</h3>
 <div class="form-group">
-<label for="name">Beginning Date</label>
+<label for="name">Start Date</label>
 <input type="date" class="form-control" id="date" name="sdate">
 </div>
 <div class="form-group">
-<label for="name">Beginning Time</label>
+<label for="name">Start Time</label>
 <input type="time" class="form-control" id="time" name="stime">
 </div>
-<hr size="8"/>
 <div class="form-group">
 <label for="name">End Date</label>
 <input type="date" class="form-control" id="date" name="edate">
@@ -40,6 +40,21 @@
 <label for="name">End Time</label>
 <input type="time" class="form-control" id="time" name="etime">
 </div>
+
+<br><h3> During that time, did it ever malfunction?</h3>
+<div class="checkbox">
+<label><input type="radio" name="type" value="No"> No </label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="Yes"> Yes</label>
+</div>
+
+<br><h3>Brand and Model of Camera</h3>
+<div class="form-group">
+<b>Brand</b><input type="text" class="form-control" id="brand" name="brand">
+<b>Model</b><input type="text" class="form-control" id="model" name="model">
+</div>
+
 <br><h3>Location</h3>
 <button type="button" class="btn btn-primary" onclick="getLocation()" id="useLocation">Use Current Location</button><br><br>
 <script>
@@ -56,6 +71,9 @@ document.getElementById("lat").value = position.coords.latitude;
 document.getElementById("lon").value = position.coords.longitude;
 }
 </script>
+<form action="http://google.com/maps">
+    <input type="submit" value="Use Google Maps">
+</form>
 <div class="form-group">
 <label>Latitude of Observation</label>
 <input type="text" class="form-control" id="lat" name="latitude">
@@ -64,20 +82,30 @@ document.getElementById("lon").value = position.coords.longitude;
 <label>Longitude of Observation</label>
 <input type="text" class="form-control" id="lon" name="longitude">
 </div>
+<h3> Were there bears on your camera?</h3>
+<div class="checkbox">
+<label><input type="radio" name="type" value="Yes"> Yes </label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="No"> No</label>
+</div>
 <br>
-<h3>Bear Sightings</h3>
-<h5>Enter any bear sightings in the format "6/20/15 5:00pm, 6/21/15 4:25am". Remember it is very important that you submit when your camera was operational even if you did not see any bears, if your camera did not see any bears then leave this field blank.<h5>
+<h3>If yes, please list the sightings:</h3>
+<h5>Use a comma "," to separate sightings. e.g.: "6/20/15 5:00pm, 6/21/15 4:25am". <br />
+If you saw bears more than once in a 30 minute period, count as 1 sighting. <br />
+If you did not see any bears, leave this field blank.
 <div class="form-group">
 <input type="text" class="form-control" id="sightings" name="sightings">
 </div>
-<br><h3>Photo</h3>
+<br><h3>Upload Photos from your Camera</h3>
 <input type="file" name="fileToUpload" id="fileToUpload"><br>
-<br><h3>Comments</h3>
+<br><h3>Comments about the Camera or Photos:</h3>
+<h5> Did you observe other wildlife? </h5>
 <div class="form-group">
 <textarea class="form-control" rows="7" name="comments"></textarea>
 </div><br>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<button type="submit" class="btn btn-primary">Submit My Trail Camera Data</button>
+</form><br><br>
 </div>
 </body>
 </html>
