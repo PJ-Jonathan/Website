@@ -4,6 +4,23 @@
 <html>
 <?php include '/php/header.php' ?>
 
+<body>
+<div class = "container-fluid">
+<div class="jumbotron">
+	<h1>NY eBear:</h1> 
+    <p>A citizen science project to study black bears in NY</p>
+</div>
+<div class="row">
+	<ul class="nav nav-tabs" role="tablist">
+		<li class="active"><a href="../index.html">Home</a></li>
+		<li ><a href="html/about.html">About</a></li>
+		<li><a href="html/quicksubmit.html">Quick Submit</a></li>
+		<li><a href="html/recognizing.html">Recognizing Bear Signs</a></li>
+		<li><a href="html/faq.html">FAQ</a></li>  
+		<li><a href="html/contact.html">Contact</a></li>   
+    </ul>
+</div>
+<br>
 
 <!--
 <div class="row">
