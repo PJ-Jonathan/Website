@@ -14,8 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1>NY eBear</h1>
-                <h2>A citizen science project to study black bears in NY</h2>
+                <h1>Contact</h1>
             </div>
             <div class="col-md-6">
                 <img src="http://nyebear.org/res/icon.png" height="200" width="200" style="float:right"/>
@@ -27,10 +26,10 @@
 	<ul class="nav nav-tabs" role="tablist">
 		<li><a href="../index.html">Home</a></li>
 		<li ><a href="about.html">About</a></li>
-		<li class="active"><a href="quicksubmit.html">Quick Submit</a></li>
+		<li><a href="quicksubmit.html">Quick Submit</a></li>
 		<li><a href="instructions.html">Instructions</a></li>
 		<li><a href="faq.html">FAQ</a></li>  
-		<li><a href="contact.html">Contact</a></li>   
+		<li  class="active"><a href="contact.html">Contact</a></li>   
     </ul>
 </div>
 <br>

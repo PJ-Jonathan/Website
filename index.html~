@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body style="margin:20px">
 <div class="jumbotron">
     <div class="container">
         <div class="row">
@@ -29,7 +29,7 @@
 		<li class="active"><a href="../index.html">Home</a></li>
 		<li ><a href="html/about.html">About</a></li>
 		<li><a href="html/quicksubmit.html">Quick Submit</a></li>
-		<li><a href="html/recognizing.html">Instructions</a></li>
+		<li><a href="html/instructions.html">Instructions</a></li>
 		<li><a href="html/faq.html">FAQ</a></li>  
 		<li><a href="html/contact.html">Contact</a></li>   
     </ul>
