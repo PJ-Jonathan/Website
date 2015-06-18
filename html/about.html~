@@ -1,25 +1,34 @@
 
-
-<html>
-<head>
-<title>About</title>
+<link href="/res/icon.png" rel="shortcut icon">
+<title>NY eBear</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+
 <body>
-<div class = "container-fluid">
 <div class="jumbotron">
-	<h1> About NY eBear</h1> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>NY eBear</h1>
+                <h2>A citizen science project to study black bears in NY</h2>
+            </div>
+            <div class="col-md-6">
+                <img src="http://nyebear.org/res/icon.png" height="200" width="200" style="float:right"/>
+            </div>
+        </div>
+      </div>
 </div>
 <div class="row">
 	<ul class="nav nav-tabs" role="tablist">
 		<li><a href="../index.html">Home</a></li>
 		<li class="active"><a href="about.html">About</a></li>
 		<li><a href="quicksubmit.html">Quick Submit</a></li>
-		<li><a href="recognizing.html">Recognizing Bear Signs</a></li>
+		<li><a href="recognizing.html">Instructions</a></li>
 		<li><a href="faq.html">FAQ</a></li>  
 		<li><a href="contact.html">Contact</a></li>   
     </ul>
@@ -32,6 +41,7 @@
 		  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
 		  </ol>
 
 		  <!-- Wrapper for slides -->
@@ -39,14 +49,23 @@
 			<div class="item active">
 				<center><img src="../res/about1.jpg" alt="Bear 1"></center>
 				<div class="carousel-caption">
+				<h4> Cat Sun, a researcher with NYeBear, posing with a tranquilized study bear in 2012. </h4>
 				</div>
 			</div>
 
 			<div class="item">
 			  <center><img src="../res/about2.png" alt="Bear 2"></center>
 				<div class="carousel-caption">
+				<h4> <font color ="white"> A young bear caught by suprise on a trail camera  </font></h4>
 				</div>
 			</div>
+			<div class="item">
+			  <center><img src="../res/about3.jpg" alt="Bear 2"></center>
+				<div class="carousel-caption">
+				<h4> Black bear hair snagged on barbed wire. This indicates the presence of bear and potentially also provides DNA. </h4>
+				</div>
+			</div>
+
 
 		  </div>
 

@@ -1,36 +1,48 @@
-<html>
-<head>
-<title>FAQ</title>
+<link href="/res/icon.png" rel="shortcut icon">
+<title>NY eBear</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+
 <body>
-<div class = "container-fluid">
 <div class="jumbotron">
-	<h1>Contact</h1> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>NY eBear</h1>
+                <h2>A citizen science project to study black bears in NY</h2>
+            </div>
+            <div class="col-md-6">
+                <img src="http://nyebear.org/res/icon.png" height="200" width="200" style="float:right"/>
+            </div>
+        </div>
+      </div>
 </div>
 <div class="row">
 	<ul class="nav nav-tabs" role="tablist">
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
+		<li class="active"><a href="../index.html">Home</a></li>
+		<li ><a href="about.html">About</a></li>
 		<li><a href="quicksubmit.html">Quick Submit</a></li>
-		<li><a href="contact.html">Contact</a></li>    
-		<li class="active"><a href="faq.html">FAQ</a></li>      
+		<li><a href="instructions.html">Instructions</a></li>
+		<li class="active"><a href="faq.html">FAQ</a></li>  
+		<li><a href="contact.html">Contact</a></li>   
     </ul>
-</div><br>
+</div>
+<br>
 <p>
-1) How many bears are in New York?
+<b>1) How many bears are in New York?</b><br>
 	The New York State Department of Environmental Conservation estimates about 6,000-8,000 bears in New York. 
 	There are approximately 3,200 in the Adirondacks, 1,800 in the Catskill region, and 1,000 in central-western New York.
 	An objective of NYeBear is to help the NYSDEC refine their estimates of population size and distribution of bears in the state.
 </p>
 <p>
-2) Why are there more bears in New York now?
-	Short answer: Successfull black bear management and more habitat that bears use.
-	Long answeR: Back in the 18th and 19th centuries, black bear population in New York and across the eastern United States decreased drastically due 
+<b>2) Why are there more bears in New York now?</b><br>
+	<i>Short answer</i>: Successfull black bear management and more habitat that bears use.<br />
+	<i>Long answer </i>: Back in the 18th and 19th centuries, black bear population in New York and across the eastern United States decreased drastically due 
 	to hunting and loss of forest habitat due to the creating of farmlands. In 1903, bears in New York became protected and 
 	hunting became regulated. At the same time, larges areas of farmland reverted back to forest land.  In the 1950s, there were 
 	3 main regions of black bears in New York: Adirondacks Range, Catskill Range, and the Allegany Range. As the population continues
@@ -40,7 +52,7 @@
 	is to help ascertain and refine the range description of bears in New York.
 </p>
 <p>
-3) What is citizen science and why is it necessary to use it to study black bears in New York?
+<b>3) What is citizen science and why is it necessary to use it to study black bears in New York?</b><br>
 	Citizen science is a well-established way to conduct research, where citizens, volunteers, and non-professional scientists play a central
 	role in the research. Citizen science can refer to citizens' involvement in various aspects of research, from forming research questions and hypotheses, 
 	to data collection, data analysis, and the sharing of research results. Just about anybody can be a citizen science, so this is a good way to collect
@@ -51,16 +63,16 @@
 	
 </p>
 <p>
-4) What types of data does NYeBear collect?
-	NYeBear collects data on the presence and absence of black bears across upstate New York, year round. If a bear is observed on a trail camera or
-	on a hike, or if bear sign (hair, scat, pawprint) is observed, this is "presence" data. When no signs of bear are observed, this is "absence data".
-	"Absence" data is just as important as "presence data"! It is crucial to collect and report both "presence" and "absence" data, because this helps us be confident about where there are and arent bears.
-	When you report data about a hike, your outdoor camera, or a visit to a research site, make sure you report both information about when and where you
+<b>4) What types of data does NYeBear collect?</b><br>
+	NYeBear collects data on the detection and non-detection  of black bears across upstate New York, year round. If a bear is observed on a trail camera or
+	on a hike, or if bear sign (hair, scat, pawprint) is observed, this is "detection" data. When no signs of bear are observed, this is "non-detection data".
+	Both are equally important, because it helps us be confident about both where there are and where there arent bears.
+	When you report data about a hike, your outdoor camera, or a visit to a research site, make sure you report all your data about when and where you
 	did and didnt see bear!  
 </p>
 <p>
-5) What do I do if I'm not sure what I saw was a bear or bear sign?
-	There are two things you should do. First, look at <a> Is that black bear? </a> to help you. Second, when you submit your data, include in 
+<b>5) What do I do if I'm not sure what I saw was a bear or bear sign?</b><br>
+	There are two things you should do. First, look at <a href="recognizing.html"> Recognizing black bear signs </a> to help you. Second, when you submit your data, include in 
 	your comments if you are not sure. Finally, you can always  <a href="contact.html"> contact </a> the researchers with a description and photos. 
 
 	Citizen science has the ability to collect large amounts of data, but methods also need to be in place to maintain the quality of the data too.
@@ -69,13 +81,13 @@
 
 </p>
 <p>
-6) How long does the NYeBear project run?
+<b>6) How long does the NYeBear project run?</b><br>
 	NYeBear will potentially run for ~4 years, or longer. 2015 is the first year of the project, and it is a pilot year to finetune the project. This 
 	will be useful for researchers to learn	how to make NYeBear successful for the course of the project. We encourage citizen scientists to participate 
 	for as long as possible, since this provides long-term continuous data.
 </p>
 <p>
-7) Where can I learn more about black bears in New York?
+<b>7) Where can I learn more about black bears in New York?</b><br>
 	There are many resources online about black bears in general. For more information specific to New York, visit the <a 
 href="http://www.dec.ny.gov/animals/6960.html"> New York State Department of Environmental 
 Conservation&#39;s website </a>
