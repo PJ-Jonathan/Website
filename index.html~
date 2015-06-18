@@ -1,32 +1,10 @@
 
 
+
 <html>
-<head>
-<link href="res/icon.png" rel="shortcut icon">
-<title>NY eBear</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class = "container-fluid">
-<div class="jumbotron">
-	<h1>NY eBear:</h1> 
-    <p>A citizen science project to study black bears in NY</p>
-</div>
-<div class="row">
-	<ul class="nav nav-tabs" role="tablist">
-		<li class="active"><a href="../index.html">Home</a></li>
-		<li ><a href="html/about.html">About</a></li>
-		<li><a href="html/quicksubmit.html">Quick Submit</a></li>
-		<li><a href="html/recognizing.html">Recognizing Bear Signs</a></li>
-		<li><a href="html/faq.html">FAQ</a></li>  
-		<li><a href="html/contact.html">Contact</a></li>   
-    </ul>
-</div>
-<br>
+<?php include '/php/header.php' ?>
+
+
 <!--
 <div class="row">
 	<button type="button" class="btn btn-primary btn-lg" style = "float:right;margin-right:5px;margin-left:5px;" onclick='window.location.href = "html/login.html";'>Log In</button>  <button type="button" class="btn btn-default btn-lg" style = "float:right" onclick='window.location.href = "html/makeAnAccount.html";'>Sign Up</button>
@@ -35,10 +13,11 @@
 <div class="row">
 	<div class="col-sm-3 col-md-6">
 <h3><strong> Welcome to NY eBear!</strong></h3>
+<h3>	Please "bear" with us as we develop the NYeBear site. Check back soon!</h3>
 	<h3>Become a citizen scientist!</h3>
 	<h3>Join researchers studying the population and distribution of black bears in New York.</h3>
 	<h3>
-	Explore the website to learn more and to submit your NYeBear data.
+Explore the website to learn more and to submit your NYeBear data.
 	</h3>
 
 </div>
@@ -54,7 +33,7 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="res/index1.jpg" alt="Bear 1">
+				<center><img src="res/index1.jpg" alt="Bear 1"></center>
 				<div class="carousel-caption">
 				<!--	<h3>Bear #1</h3>
 					<p>This bear is eating a salmon.</p>-->
