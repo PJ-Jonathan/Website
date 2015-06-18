@@ -1,4 +1,5 @@
 <?php
+echo '
 <head>
 <link href="res/icon.png" rel="shortcut icon">
 <title>NY eBear</title>
@@ -8,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+';
 ?>
 
 
