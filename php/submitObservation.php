@@ -50,7 +50,6 @@ if ($uploadOk == 0) {
 
 
 
-
 $date = $_POST["date"];
 $time = $_POST["time"];
 $latitude = $_POST["latitude"];
