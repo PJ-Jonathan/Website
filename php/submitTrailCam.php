@@ -41,7 +41,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 */
 echo '<script>window.location.href="../html/submissionComplete.html"</script>';
 
-$bears - $_POST["bears"];
+$bears = $_POST["bears"];
 $brand = $_POST["brand"];
 $model = $_POST["model"];
 $malfunctioned = $_POST["malfunctioned"];
@@ -51,8 +51,8 @@ $edate =$_POST["edate"];
 $etime =$_POST["etime"];
 $sightings = $_POST["sightings"];
 $comments = $_POST["comments"];
-$latitude = $_POST["latitude"];
-$longitude = $_POST["longitude"];
+$latitude = $_POST["us2-lat"];
+$longitude = $_POST["us2-lon"];
 
 $sql = 'INSERT INTO trail_camera_data (email,start_date,start_time,end_date,end_time,sightings,latitude,longitude,comments,photo_url,bears_seen,brand,model,cam_malfunctioned) VALUES ("'.$email.'","'.$sdate.'","'.$stime.'","'.$edate.'","'.$etime.'","'.$sightings.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$picture_url.'","'.$bears.'","'.$brand.'","'.$model.'","'.$malfunctioned.'")';
 $conn->query($sql) or die(mysqli_error($conn));
