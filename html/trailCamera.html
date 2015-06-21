@@ -1,23 +1,24 @@
-
 <html>
+
 <head>
-<link href="/res/icon.png" rel="shortcut icon">
-<title>NY eBear</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
-<script src="../locationpicker.jquery.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="/res/icon.png" rel="shortcut icon">
+    <title>NY eBear</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
+    <script src="../locationpicker.jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<div class = "container-fluid">
-<div class="jumbotron">
-<h1>Submit Trail Camera Data</h1>
-</div>
-<button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Submit Trail Camera Data</h1>
+        </div>
+        <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
 <button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Data from Trail Cameras"'>How to Submit Data from Trail Cameras</button>
 <br>
 <form role="form" action="../php/submitTrailCam.php" method="POST"  enctype="multipart/form-data">
@@ -109,4 +110,3 @@ If you did not see any bears, leave this field blank.
 </div>
 </body>
 </html>
-
