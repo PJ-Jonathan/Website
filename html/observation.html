@@ -41,9 +41,9 @@
 
 <div id="us2" style="width: 500px; height: 400px;"></div>		
 <br>
-<label>Latitude of Observation or Start of Hike</label><input  class="form-control" type="text" id="us2-lat"/>
+<label>Latitude of Observation or Start of Hike</label><input  class="form-control" type="text" id="us2-lat" name="longitude"/>
 <div class="form-group">
-<label>Longitude of Observation or Start of Hike</label><input class="form-control" type="text" id="us2-lon"/>
+<label>Longitude of Observation or Start of Hike</label><input class="form-control" type="text" id="us2-lon" name="latitude"/>
 <script>$('#us2').locationpicker({
 	location: {latitude: 42.447581, longitude: -76.485010},	
 	radius: 0,
@@ -83,19 +83,19 @@
 </div>
 <br><h3>How confident are you that it was of a black bear?</h3> 
 <div class="checkbox">
-<label><input type="radio" name="type" value="1 - Not confident at all"> 1 - Not confident at all</label>
+<label><input type="radio" name="confidence" value="1"> 1 - Not confident at all</label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="2 - Slightly Confident "> 2 - Slightly Confident</label>
+<label><input type="radio" name="confidence" value="2"> 2 - Slightly Confident</label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="3 - Somewhat Confident"> 3 - Somewhat Confident</label>
+<label><input type="radio" name="confidence" value="3"> 3 - Somewhat Confident</label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="4 - Confident"> 4 - Confident</label>
+<label><input type="radio" name="confidence" value="4"> 4 - Confident</label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="5 - Very Confident"> 5 - Very Confident</label>
+<label><input type="radio" name="confidence" value="5"> 5 - Very Confident</label>
 </div>
 <br><h3>Submit Photos or Hiking Datasheet</h3>
 <input type="file" name="fileToUpload" id="fileToUpload">
