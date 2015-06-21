@@ -5,13 +5,10 @@ $email = $_POST["email"];
 
 $t=$email."-".time()."-".basename($_FILES["fileToUpload"]["name"]);
 $picture_url = $t;
-//$t = $email."-".$t."-". basename($_FILES["fileToUpload"]["name"];
 $target_dir = "/var/www/upload/";
-//$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $target_file = $target_dir.$t;
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if($check !== false) {
@@ -44,8 +41,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        //echo '<script>window.location.href="../html/submissionComplete.html"</script>';
-        echo ":)";
+        echo '<script>window.location.href="../html/submissionComplete.html"</script>';
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
