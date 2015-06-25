@@ -1,4 +1,5 @@
 <html>
+<html>
 
 <head>
     <link href="/res/icon.png" rel="shortcut icon">
@@ -12,14 +13,25 @@
 
 
 <body style="margin:20px">
-    <div class="jumbotron">
+    <div class="jumbotron" style="
+    padding: 0.9em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    }">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h1>Quick Submit</h1>
+                    <h2> Hikes, observations, trail cameras, and study sites</h2>
                 </div>
-                <div class="col-md-6">
-                    <img src="http://nyebear.org/res/icon.png" height="200" width="200" style="float:right" />
+                <div class="col-md-2">
+                    <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
                 </div>
             </div>
         </div>
@@ -42,9 +54,9 @@
             </li>
         </ul>
     </div>
-    <center>
-        <h3>Before submiting data, please review  <a href="howToReportAnObservation.html"> How To Submit Data </a></h3>
-    </center>
+    <h3>Thank you for being a NYeBear citizen scientist! Your data are valuable. To make sure we get the most out of your data, please review the <a href="instructions.html"> Instructions</a>. It is important to report data <i>even when you do not observe bears or bear signs </i> on your hikes or cameras. Knowing about the absence of bears is equally important as presence of bears for understanding bear distribution. </h3>
+    <br/>
+    <a href="nyebear.org/hikesheet.pdf"> Print a paper datasheet for hikes (if you do not have a smartphone)</a>
 
     <div class="row">
         <div class="col-sm-4" id="observation">
@@ -73,7 +85,9 @@
             <center>
                 <br>
                 <button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="hair.html"'>Submit study site check data</button>
-                <h4>(If we contacted you to monitor a research site.)</h4>
+                <h4> (Still in development.)</h4>
+                <!-- <h4>(If we contacted you to monitor a research site.)</h4>
+                -->
                 <img src="../res/quickSubmit_hair.jpg" class=".img-responsive" alt="Bear Hair" width="100%">
                 <br>
                 <br>

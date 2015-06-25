@@ -2,7 +2,7 @@
 
 <head>
     <link href="/res/icon.png" rel="shortcut icon">
-    <title>NY Bear</title>
+    <title>NY eBear</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -12,14 +12,25 @@
 
 
 <body style="margin:20px">
-    <div class="jumbotron">
+    <div class="jumbotron" style="
+    padding: 0.9em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    }">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h1>Instructions</h1>
+                    <h2> How to collect and submit data</h2>
                 </div>
-                <div class="col-md-6">
-                    <img src="http://nyebear.org/res/icon.png" height="200" width="200" style="float:right" />
+                <div class="col-md-2">
+                    <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
                 </div>
             </div>
         </div>
@@ -42,215 +53,120 @@
             </li>
         </ul>
     </div>
+    <br>
+
+    <!--
+<div class="row">
+	<button type="button" class="btn btn-primary btn-lg" style = "float:right;margin-right:5px;margin-left:5px;" onclick='window.location.href = "html/login.html";'>Log In</button>  <button type="button" class="btn btn-default btn-lg" style = "float:right" onclick='window.location.href = "html/makeAnAccount.html";'>Sign Up</button>
+</div>
+-->
 
 
-    <h2> <u><b>Citizen scientsts can collect data for NYeBear in three ways </b></u>: </h2>
-    <h3><ul>
+    <button type="button" class="btn btn-default" onclick='window.location.href = "observation.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+
+<h3> <u><b>Citizen scientsts can collect data for NYeBear in 3 ways</b></u>: </h3> 
+<h4><ul>
 <li> The <b>first way  </b>is <a href="#Data from Hikes/Observations">to go on  hikes </a>and then report information about it: date, route, any observations of bears, etc. 
 We recommend that citizen scientists repeat their hikes and trails every few weeks to collect data for the same places. 
 <li> A <b>second way </b> is <a href="#Data from Trail Cameras"> to set a trail camera on your property </a>and routinely check and report photos from it.
 <li>The <b> third way </b> is <a href="#Data from Study Site Checks"> to monitor specific research sites</a> for black bear hair. We are still developing this - stay tuned!
-</ul></h3>
+</ul></h4>
+        <i>All reported data are solely for research purposes, and are kept confidential and secure.</i>
+<br> </br>
+    
+<a name="Instructions"></a> 
+<a name="Data from Hikes/Observations"></a></i>
+&nbsp;<h3><u>Data from Hikes/Observations</u></h3>
+<h4>There are 3 ways to collect and submit data from hikes/observations: (See below for more details)</h4>
+  <OL> <li> <a href="#Using NYeBear App">Using the  NYeBear app</a>: We recommend this method if you have a smartphone. It is easiest and provides us with more accurate and real-time data.
+       <li> <a href="#Using the Paper version">Using print-out datasheets</a>: If you don't have a smartphone, you may print out a paper version to take with you when you are out.  <a href= "nyebear.org/hikesheet.pdf">Click here to print the paper datasheet </a>
+Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it into the computer and submit it as a hike/observation on the website, or snail-mail it to us at:<br >
 
-    <br> </br>
-    <h2> <u><b> How to identify black bear signs</b></u>: </h2>
+&nbsp;&nbsp;&nbsp;ATTN: Cat Sun <br />
+&nbsp;&nbsp;&nbsp;&nbsp;NYeBear <br />
+&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Cornell University<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853<br />
 
-    <table border="4">
-        <tr>
-            <td rowspan="2">
-                <h3><b> &nbsp;Actual Bear &nbsp;&nbsp; </h3>
-                </b>
-            </td>
-            <td>
-                <h4> &nbsp;Black body with brown/tan muzzle; occasionally a white patch on chest </h4>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h4>&nbsp;Adults are 3-6' in length from nose to tail; 100-500 lbs </h4>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="4">
-                <h3><b>&nbsp; Hair &nbsp;&nbsp;</h3>
-                </b>
-            </td>
-            <td>
-                <h4>&nbsp;Approx. 1-4" long; guard hairs are all black; underfur may be brown </h4> </td>
-        </tr>
-        <tr>
-            <td>
-                <h4>&nbsp;Shed hair may be lighter from sun exposure</h4>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h4>&nbsp;Hair from raccoon, oppossum, and deer have multiple other colors (white, cream, tan) on a strand.</h4> </td>
-        </tr>
-        <tr>
-            <td>
-                <h5><i>&nbsp;Commonly found on ground, tree trunks, barbed wired </i></h5>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <h3><b>&nbsp;Tracks &nbsp;&nbsp;</h3>
-                </b>
-            </td>
-            <td>
-                <h4>&nbsp;Broad footprints, about 4-7" long, with 5 toes and sometimes claw marks </h4> </td>
-        </tr>
-        <tr>
-            <td>
-                <h5><i>&nbsp;Found on trails, in soft soil, mud, or sand </i> </h5>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="3">
-                <h3><b>&nbsp;Scat</h3>
-                </b>
-            </td>
-            <td>
-                <h4> &nbsp;Usually dark brown (varies by diet), ~1-2" diameter; cylindrical and sometimes coiled</h4>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h4> &nbsp;If diet was mainly berries, may be soft and liquidy</h4> </td>
-        </tr>
-        <tr>
-            <td>
-                <h4> &nbsp;Content may include grasses, seeds, animal hair, shells </h4>
-            </td>
-        </tr>
-    </table>
-    pictures to come!
-    <br></br>
-    <h2> <u> <b> Instructions for collecting and reporting data </u></b> </h2>
-    <a name="Data from Hikes/Observations"></a>
-    </i>
-    <h3><u>Data from Hikes and Observations</u></h3>
-    <h4>There are 3 ways to collect and submit data from hikes/observations: (See below for more details)</h4>
-    <OL>
-        <li> <a href="#Using NYeBear App">Using the  NYeBear app</a>: We recommend this method if you have a smartphone. It is easiest and provides us with more accurate and real-time data.
-            <li> <a href="#Using the Paper version">Using print-out datasheets</a>: If you don't have a smartphone, you may print out a paper version to take with you when you are out. <a href="../hikesheet.pdf" target="_blank">Click here to print the paper datasheet </a> Bring a GPS unit to record your hike as GPS waypoints. Then you can scan it into the computer and submit it as a hike/observation on the website, or snail-mail it to us at:
-                <br> &nbsp;&nbsp;&nbsp;&nbsp;ATTN: Cat Sun
-                <br /> &nbsp;&nbsp;&nbsp;&nbsp;NYeBear
-                <br /> &nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall
-                <br /> &nbsp;&nbsp;&nbsp;&nbsp;Cornell University
-                <br /> &nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853
-                <br />
+  &nbsp;     <li> <a href="#Use this website">Using this website</a>:You can submit your hike/observations through the online form.
+  </OL>
+&nbsp;** Submit hikes and observations regardless of whether or not you actually saw a bear or bear signs.** <br/>
+&nbsp;** All data are important because they allow researchers to accurately estimate the range of black bears in New York. ** 
+<br></br>
+<a name="Using NYeBear App"></a></i>
+&nbsp;<h4><i>Using NYeBear App</i></h4>
+<ol> <li>When you start a hike, turn <b>ON</b> the "Start a Hike"/ "Track Hiking" function.
+			<ul> <li> It is never too late to start a hike, even if you forgot to do this until you had an observation to report!
+			<li> If you did not go on a hike and are reporting a standalone observation, skip this step.</ul>
+     <li> When/if you observe a bear or signs of bear (hair/scat/pawprint) go to "Report Data" and choose "Report an Observation".
+     <li> Fill out the requested information:
+		<ol type="a"><li> "Use current location" automatically fills the fields with your current location, and should only be used if you are actually where you made your observation.
+		    <li> Check all the signs that you observed.
+		    <li> Rate how confident you are about the sign being from black bear: 1=low to 5=high
+		    <li> We recommend attaching photo(s) of your bear observation or sign.
+		    <li> Provide any other comments about your observation. 
+		    <li> Submit! Congratulations!</ol>
+     <li> When you finish your hike, turn <b>OFF</b> the "Start a Hike"/"Track Hiking" function.
+</ol>
+<a name="Using the Paper version"></a></i>
+<p><h4><i>Using paper datasheets</i></h4></p>
+<ol><li> Download/print the Hike Datasheet. When you go on a hike, <b>bring the datasheet and a GPS Unit</b> to record locations/waypoints.
+    <li> Before you hit the trail/hike, fill out <b>"Before the hike"</b> and <b>"Citizen Scientist Information" </b> on the datasheet.
+    <li> When you start your hike, record the start time and GPS coordinates on the first row.
+    <li> At regular intervals (we suggest choosing either 5,10, or 15 minutes;more frequent is better but no more than 15 minutes),<br />
+ 	<ul> <li>record the time, 
+     	     <li>location,
+       	     <li> any bear sign you may have observed,
+ 	     <li> how confident you are in those signs being from black bear.
+ </ul> <li> When you are finished, provide any comments or thoughts about your hike or any bear signs or observations, 
+    <li> Fill out <b>"After the hike"</b> at the top of the datasheet.
+    <li> Mail the form back to us, or submit it online  by following the instructions for <a href="#Use this website">Using this website</a> <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;ATTN: Cat Sun <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;NYeBear <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;Cornell University<br /> 
+			&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853<br />
+</ol>
+<a name="Use this website"></a></i>
+<p><h4><i>Using this website, nyebear.org </i></h4></p>
+<ol><li> Choose "Submit an Observation" on the Quick Submit page.
+    <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.
+    <li> Then, provide the date and start time of your hike or observation.
+    <li> Fill out the remaining data.<ul>
+        <li> If you are submitting a paper data sheet, still fill out this information as best as possible</li></ul>
+    <li> Find the latitude and longitude of your observation. If you are submitting an entire hike, use the starting location of your hike.  **We are working on a way to submit entire hikes - stay tuned.**
+	<ul> <li> With Google Maps, move the pin to your location and zoom in as close as possible;
+		      <li> The fields for latitude and longitude will automatically fill in;
+        <li> If you manually enter the latitude and longitude, the map will find verify that location.</li></ul>
+    <li> We recommend you attach photo(s) of your bear observation or sign.
+	<ul> <li> If you are submitting an entire hike, upload a scanned copy of your datasheet. </ul>
+    <li> Provide any other comments about your observation. 
+    <li> Submit! Congratulations!
+</ol>
 
-                <li> <a href="#Use this website">Using this website</a>:You can submit your hike/observations through the online form.
-    </OL>
-    &nbsp;** Submit hikes and observations regardless of whether or not you actually saw a bear or bear signs.**
-    <br/> &nbsp;** All data are important because they allow researchers to accurately estimate the range of black bears in New York. **
-    <br></br>
-    <a name="Using NYeBear App"></a>
-    </i>
-    &nbsp;
-    <h4><i>Using NYeBear App</i></h4>
-    <ol>
-        <li>When you start a hike, turn <b>ON</b> the "Start a Hike"/ "Track Hiking" function.
-            <ul>
-                <li> It is never too late to start a hike, even if you forgot to do this until you had an observation to report!
-                    <li> If you did not go on a hike and are reporting a standalone observation, skip this step.</ul>
-            <li> When/if you observe a bear or signs of bear (hair/scat/pawprint) go to "Report Data" and choose "Report an Observation".
-                <li> Fill out the requested information:
-                    <ol type="a">
-                        <li> The "Use current location" button automatically fill the fields with your current location, and should only be used if you are actually where you made your observation.
-                            <li> Check all the signs that you observed.
-                                <li> Rate how confident you are about the sign being from black bear: 1=low to 5=high
-                                    <li> We recommend attaching photo(s) of your bear observation or sign.
-                                        <li> Provide any other comments about your observation.
-                                            <li> Submit! Congratulations! :) </ol>
-                    <li> When you finish your hike, turn <b>OFF</b> the "Start a Hike"/"Track Hiking" function.
-    </ol>
-    <br></br>
-    <a name="Using the Paper version"></a>
-    </i>
-    <h4><i>Using print-out datasheets</i></h4>
-    <ol>
-        <li> <a href="../hikesheet.pdf" target="_blank">Download/print the Hike Datasheet</a>. When you go on a hike, <b>bring the datasheet and a GPS Unit</b> to record locations/waypoints.
-            <li> Before you hit the trail/hike, fill out <b>"Before the hike"</b> and <b>"Citizen Scientist Information" </b> on the datasheet.
-                <li> When you start your hike, record the start time and GPS coordinates on the first row.
-                    <li> At regular intervals (we suggest choosing either 5,10, or 15 minutes;more frequent is better but no more than 15 minutes),
-                        <br />
-                        <ul>
-                            <li>record the time,
-                                <li>location,
-                                    <li> any bear sign you may have observed,
-                                        <li> how confident you are in those signs being from black bear.
-                        </ul>
-                        <li> When you are finished, provide any comments or thoughts about your hike or any bear signs or observations,
-                            <li> Fill out <b>"After the hike"</b> at the top of the datasheet.
-                                <li> Mail the form back to us, or submit it online by following the instructions for <a href="#Use this website">Using this website</a>
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;ATTN: Cat Sun
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;NYeBear
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;Cornell University
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853
-                                    <br />
-    </ol>
-    <a name="Use this website"></a>
-    </i>
-    <h4><i>Using this website, nyebear.org </i></h4>
-    <ol>
-        <li> Choose "Submit an Observation" on the Quick Submit page.
-            <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.
-                <li> Then, provide the date and start time of your hike or observation.
-                    <li> Fill out the remaining data.
-                        <li> Find the latitude and longitude of your observation. If you are submitting an entire hike, use the starting location of your hike. **We are working on a way to submit entire hikes - stay tuned.**
-                            <ol type="a">
-                                <li> Use Google Maps in a new window to find the location;
-                                    <li> Right click and select "What's Here";
-                                        <li> A dialogue box under the search bar appears with latitude and longitude;
-                                            <li> Copy and past into the text fields.</ol>
-                            <li> We recommend you attach photo(s) of your bear observation or sign.
-                                <ul>
-                                    <li> If you are submitting an entire hike, upload a scanned copy of your datasheet. </ul>
-                                <li> Provide any other comments about your observation.
-                                    <li> Submit! Congratulations!
-    </ol>
+</br>
+<a name="Data from Trail Cameras"></a> 
+<h3><u>Data from Trail Cameras</u></h3>
+<b>*If you have a camera out for an entire season, we recommend you submit data regularly and frequently: once a week or biweekly** </b>
+	<ol> <li> Choose "Submit Trail Camera Data" on the Quick Submit page.
+	     <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.
+	     <li> Then, provide the dates and times of the camera period you are reporting. 
+	     <li> Fill out the remaining data about your camera. 
+	     <li> Find the latitude and longitude of your camera.
+		<ul> <li> With Google Maps, move the pin to your location and zoom in as close as possible;
+		      <li> The fields for latitude and longitude will automatically fill in;
+            <li> If you manually enter the latitude and longitude, the map will find verify that location.</ul>
+	     <li> If you caught bears on your camera, report them as separate occurrences.
+		<ul><li> Count it as 1 occurrence if bears appeared multipled times within a 30 minute time block.</ul>
+	     <li> Upload us your photos of the bears. Submit photos of other wildlife too! 
+	     <li> Provide any comments about the bears or the camera. Did you see other wildlife?
+	     <li> Submit! Congratulations!
+</ol>
+<br></br>
+<a name="Data from Study Site Checks"></a> 
+<h3><u>Data from Study Site Checks</u></h3>
+<p><i> Coming in soon </i></p>
 
-    <br></br>
-    <a name="Data from Trail Cameras"></a>
-    <h3><u>Data from Trail Cameras</u></h3> *If you have a camera out for an entire season, we recommend you submit data regularly and frequently,~once a week or biweekly**
-    <ol>
-        <li> Choose "Submit Trail Camera Data" on the Quick Submit page.
-            <li> Fill out your email so that we can contact you in case you/we have questions.
-                <li> Then, provide the dates and times of the camera period you are reporting.
-                    <li> Fill out the remaining data about your camera.
-                        <li> Find the latitude and longitude of your observation.
-                            <ol type="a">
-                                <li> For example, use Google Maps in a new window;
-                                    <li> Find the camera location:
-                                        <li> Right click and select "What's Here";
-                                            <li> A dialogue box under the search bar appears with latitude and longitude;
-                                                <li> Copy and past into the text fields.</ol>
-                            <li> If you caught bears on your camera, report them as separate occurrences.
-                                <ul>
-                                    <li> Count it as 1 occurrence if bears appeared multipled times within a 30 minute time block.</ul>
-                                <li> Upload us your photos of the bears. Submit photos of other wildlife too!
-                                    <li> Provide any comments about the bears or the camera. Did you see other wildlife?
-                                        <li> Submit! Congratulations!
-    </ol>
-    <br></br>
-    <a name="Data from Study Site Checks"></a>
-    <h3><u>Data from Study Site Checks</u></h3>
-    <p><i> Coming in soon </i>
-    </p>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<br><br><br><br><br><br><br><br><br><br>
 </body>
-
 </html>

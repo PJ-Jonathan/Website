@@ -13,13 +13,34 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1>Submit Trail Camera Data</h1>
+
+<body style="margin:20px">
+    <div class="jumbotron" style="
+    padding: 0.9em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    }">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Submit Trail Camera Data</h1>
+                    <h2></h2>
+                </div>
+                <div class="col-md-2">
+                    <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
+                </div>
+            </div>
         </div>
-        <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Data from Trail Cameras"'>How to Submit Data from Trail Cameras</button>
+    </div>
+
+    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Data from Trail Cameras"'>How to Submit Trail Camera Data</button>
 <br>
 <form role="form" action="../php/submitTrailCam.php" method="POST"  enctype="multipart/form-data">
 <br>

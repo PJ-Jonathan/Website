@@ -13,13 +13,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1> Submitting Hikes & Observations</h1>
+
+<body style="margin:20px">
+    <div class="jumbotron" style="
+    padding: 0.9em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    }">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Submit Hikes and Observations</h1>
+                    <h2></h2>
+                </div>
+                <div class="col-md-2">
+                    <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
+                </div>
+            </div>
         </div>
-        <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Data from Hikes/Observations"'>How to Submit Hikes and Observations</button>
+    </div>
+
+
+    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
+<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Use this website"'>How to Submit Hikes and Observations</button>
 <br><br>
 <form role="form" action="../php/submitObservation.php" method="POST" enctype="multipart/form-data">
 
