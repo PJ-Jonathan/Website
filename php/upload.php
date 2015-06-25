@@ -2,7 +2,8 @@
 
 $t=$email."-".time()."-".basename($_FILES["fileToUpload"]["name"]);
 $picture_url = $t;
-$target_dir = "/var/www/upload/";
+//$target_dir = "/var/www/upload/";
+$target_dir = "/var/www/upload/html/upload/";
 $target_file = $target_dir.$t;
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
