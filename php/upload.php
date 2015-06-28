@@ -1,7 +1,7 @@
 <?php
 $email = $_POST["email"];
 $t=$email."-".time()."-".basename($_FILES["fileToUpload"]["name"]);
-$picture_url = $t;
+if(isset($_FILES["fileToUpload"])) $picture_url = $t;
 $target_dir = "/var/www/html/upload/";
 $target_file = $target_dir.$t;
 $uploadOk = 1;
