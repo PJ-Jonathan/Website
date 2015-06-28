@@ -1,7 +1,6 @@
 <?php
 require("db.php");
 
-$email = $_POST["email"];
 
 require("upload.php");
 
