@@ -17,8 +17,10 @@ $sightings = $_POST["sightings"];
 $comments = $_POST["comments"];
 $latitude = $_POST["us2-lat"];
 $longitude = $_POST["us2-lon"];
+$schedule = $_POST["schedule"];
 
-$sql = 'INSERT INTO trail_camera_data (email,start_date,start_time,end_date,end_time,sightings,latitude,longitude,comments,photo_url,bears_seen,brand,model,cam_malfunctioned) VALUES ("'.$email.'","'.$sdate.'","'.$stime.'","'.$edate.'","'.$etime.'","'.$sightings.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$picture_url.'","'.$bears.'","'.$brand.'","'.$model.'","'.$malfunctioned.'")';
+
+$sql = 'INSERT INTO trail_camera_data (email,start_date,start_time,end_date,end_time,sightings,latitude,longitude,comments,photo_url,bears_seen,brand,model,cam_malfunctioned,schedule) VALUES ("'.$email.'","'.$sdate.'","'.$stime.'","'.$edate.'","'.$etime.'","'.$sightings.'","'.$latitude.'","'.$longitude.'","'.$comments.'","'.$picture_url.'","'.$bears.'","'.$brand.'","'.$model.'","'.$malfunctioned.'","'.$schedule.'")';
 $conn->query($sql) or die(mysqli_error($conn));
 echo '<script>window.location.href="../html/submissionComplete.html"</script>'
 
