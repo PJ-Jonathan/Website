@@ -8,6 +8,23 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script language="JavaScript" type="text/javascript">
+        if (document.getElementById) {
+            document.writeln('<style type="text/css"><!--')
+            document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
+            document.writeln('//--></style>')
+        }
+
+        function openClose(theID) {
+            if (document.getElementById(theID).style.display == "block") {
+                document.getElementById(theID).style.display = "none"
+            } else {
+                document.getElementById(theID).style.display = "block"
+            }
+        }
+    </script>
+
 </head>
 
 
@@ -41,7 +58,22 @@
             </li>
             <li><a href="about.html">About</a>
             </li>
-            <li class="active"><a href="instructions.html">Instructions</a>
+            <li role="presentation" class="active dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      Instructions <span class="caret"></span>
+    </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li>
+                        <a tabindex="-1" href="instructions.html#General">General</a>
+                    </li>
+                    <li>
+                        <a tabindex="-1" href="instructions.html#Data from Hikes/Observations">Hikes and Observations</a>
+                    </li>
+                    <li><a tabindex="-1 " href="instructions.html#Data from Trail Cameras ">Trail Cameras</a>
+                    </li>
+                    <li><a tabindex="-1 " href="instructions.html#Data from Study Site Checks ">Research Study Sites</a>
+                    </li>
+                </ul>
             </li>
             <li><a href="quicksubmit.html">Quick Submit</a>
             </li>
@@ -60,10 +92,7 @@
 	<button type="button" class="btn btn-primary btn-lg" style = "float:right;margin-right:5px;margin-left:5px;" onclick='window.location.href = "html/login.html";'>Log In</button>  <button type="button" class="btn btn-default btn-lg" style = "float:right" onclick='window.location.href = "html/makeAnAccount.html";'>Sign Up</button>
 </div>
 -->
-
-
-    <button type="button" class="btn btn-default" onclick='window.location.href = "observation.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-
+<a name="Data from Trail Cameras"></a>
 <h3> <u><b>Citizen scientsts can collect data for NYeBear in 3 ways</b></u>: </h3> 
 <h4><ul>
 <li> The <b>first way  </b>is <a href="#Data from Hikes/Observations">to go on  hikes </a>and then report information about it: date, route, any observations of bears, etc. 
@@ -71,31 +100,21 @@ We recommend that citizen scientists repeat their hikes and trails every few wee
 <li> A <b>second way </b> is <a href="#Data from Trail Cameras"> to set a trail camera on your property </a>and routinely check and report photos from it.
 <li>The <b> third way </b> is <a href="#Data from Study Site Checks"> to monitor specific research sites</a> for black bear hair. We are still developing this - stay tuned!
 </ul></h4>
-        <i>All reported data are solely for research purposes, and are kept confidential and secure.</i>
+        
 <br> </br>
+    &nbsp;** Submit data regardless of whether or not you actually saw a bear or bear signs.** <br/>
+&nbsp;** All data are important because they allow researchers to accurately estimate the range of black bears in New York. ** 
+</br>&nbsp;&nbsp; <b><i>All reported data are solely for research purposes, and are kept confidential and secure.</i></b>
+    <br></br>
     
 <a name="Instructions"></a> 
 <a name="Data from Hikes/Observations"></a></i>
 &nbsp;<h3><u>Data from Hikes/Observations</u></h3>
-<h4>There are 3 ways to collect and submit data from hikes/observations: (See below for more details)</h4>
-  <OL> <li> <a href="#Using NYeBear App">Using the  NYeBear app</a>: We recommend this method if you have a smartphone. It is easiest and provides us with more accurate and real-time data.
-       <li> <a href="#Using the Paper version">Using print-out datasheets</a>: If you don't have a smartphone, you may print out a paper version to take with you when you are out.  <a href= "nyebear.org/hikesheet.pdf">Click here to print the paper datasheet </a>
-Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it into the computer and submit it as a hike/observation on the website, or snail-mail it to us at:<br >
-
-&nbsp;&nbsp;&nbsp;ATTN: Cat Sun <br />
-&nbsp;&nbsp;&nbsp;&nbsp;NYeBear <br />
-&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Cornell University<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853<br />
-
-  &nbsp;     <li> <a href="#Use this website">Using this website</a>:You can submit your hike/observations through the online form.
-  </OL>
-&nbsp;** Submit hikes and observations regardless of whether or not you actually saw a bear or bear signs.** <br/>
-&nbsp;** All data are important because they allow researchers to accurately estimate the range of black bears in New York. ** 
-<br></br>
-<a name="Using NYeBear App"></a></i>
-&nbsp;<h4><i>Using NYeBear App</i></h4>
-<ol> <li>When you start a hike, turn <b>ON</b> the "Start a Hike"/ "Track Hiking" function.
+<h4>There are 3 ways to collect and submit data from hikes/observations: (Click on each for detailed instructions)</h4>
+<div onClick="openClose('a1')" style="cursor:hand; cursor:pointer"><b>1) Using the  NYeBear App</b>: We recommend this method if you have a smartphone. It is easiest and provides us with more accurate and real-time data.&#9660;</div>
+<div id="a1" class="texter">
+   
+<ol> <li><a name="Using NYeBear App"></a>When you start a hike, turn <b>ON</b> the "Start a Hike"/ "Track Hiking" function.
 			<ul> <li> It is never too late to start a hike, even if you forgot to do this until you had an observation to report!
 			<li> If you did not go on a hike and are reporting a standalone observation, skip this step.</ul>
      <li> When/if you observe a bear or signs of bear (hair/scat/pawprint) go to "Report Data" and choose "Report an Observation".
@@ -107,10 +126,19 @@ Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it int
 		    <li> Provide any other comments about your observation. 
 		    <li> Submit! Congratulations!</ol>
      <li> When you finish your hike, turn <b>OFF</b> the "Start a Hike"/"Track Hiking" function.
-</ol>
-<a name="Using the Paper version"></a></i>
-<p><h4><i>Using paper datasheets</i></h4></p>
-<ol><li> Download/print the Hike Datasheet. When you go on a hike, <b>bring the datasheet and a GPS Unit</b> to record locations/waypoints.
+</ol><br /><br />
+</div>
+
+<div onClick="openClose('a2')" style="cursor:hand; cursor:pointer"><b>2) Using print-out datasheets</b>: If you don't have a smartphone, you may print out a paper version to take with you when you are out.&#9660;<p>&nbsp;&nbsp;&nbsp;<a href= "nyebear.org/hikesheet.pdf">Click here to print the paper datasheet </a><br/>
+&nbsp;&nbsp;&nbsp;Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it into the computer and submit it as a hike/observation through <a href= "quicksubmit.html"> Quick Submit </a> or snail-mail it to us at:</p>
+&nbsp;&nbsp;&nbsp;<i>ATTN: Cat Sun <br />
+&nbsp;&nbsp;&nbsp;&nbsp;NYeBear <br />
+&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Cornell University<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853<br /></i>
+</div>
+<div id="a2" class="texter">
+    <ol><li> <a name="Using the Paper version"></a>Download/print the Hike Datasheet. When you go on a hike, <b>bring the datasheet and a GPS Unit</b> to record locations/waypoints.
     <li> Before you hit the trail/hike, fill out <b>"Before the hike"</b> and <b>"Citizen Scientist Information" </b> on the datasheet.
     <li> When you start your hike, record the start time and GPS coordinates on the first row.
     <li> At regular intervals (we suggest choosing either 5,10, or 15 minutes;more frequent is better but no more than 15 minutes),<br />
@@ -120,16 +148,19 @@ Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it int
  	     <li> how confident you are in those signs being from black bear.
  </ul> <li> When you are finished, provide any comments or thoughts about your hike or any bear signs or observations, 
     <li> Fill out <b>"After the hike"</b> at the top of the datasheet.
-    <li> Mail the form back to us, or submit it online  by following the instructions for <a href="#Use this website">Using this website</a> <br />
+    <li> Mail the form back to us, or submit it online  by following the instructions for <a href="#Use this website">Using the <a href="quicksubmit.html"> Quick Submit</a> <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;ATTN: Cat Sun <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;NYeBear <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;Cornell University<br /> 
 			&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853<br />
-</ol>
-<a name="Use this website"></a></i>
-<p><h4><i>Using this website, nyebear.org </i></h4></p>
-<ol><li> Choose "Submit an Observation" on the Quick Submit page.
+</ol><br /><br />
+</div>
+
+<div onClick="openClose('a3')" style="cursor:hand; cursor:pointer"><b>3) Using the Quick Submit on this website</b>:You can submit your hike/observations through the <a href="quicksubmit.html"> Quick Submit forms</a> &#9660;</div>
+<div id="a3" class="texter">
+ </i></h4></p>
+<ol><li><a name="QuickSubmit"></a> On the <a href="quicksubmit.html"> Quick Submit</a> page, choose "Submit an Observation" .
     <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.
     <li> Then, provide the date and start time of your hike or observation.
     <li> Fill out the remaining data.<ul>
@@ -143,8 +174,13 @@ Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it int
     <li> Provide any other comments about your observation. 
     <li> Submit! Congratulations!
 </ol>
+<br /><br />
+</div>
+    
 
-</br>
+
+<br></br>
+
 <a name="Data from Trail Cameras"></a> 
 <h3><u>Data from Trail Cameras</u></h3>
 <b>*If you have a camera out for an entire season, we recommend you submit data regularly and frequently: once a week or biweekly** </b>
@@ -169,4 +205,21 @@ Bring a GPS unit to record your  hike as GPS waypoints. Then you can scan it int
 
 <br><br><br><br><br><br><br><br><br><br>
 </body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64657367-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
 </html>

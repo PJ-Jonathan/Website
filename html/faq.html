@@ -39,9 +39,23 @@
         <ul class="nav nav-tabs" role="tablist">
             <li><a href="../index.html">Home</a>
             </li>
-            <li ><a href="about.html">About</a>
+            <li><a href="about.html">About</a>
             </li>
-            <li><a href="instructions.html">Instructions</a>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      Instructions <span class="caret"></span>
+    </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li>
+                        <a tabindex="-1" href="instructions.html#General">General</a>
+                    </li><li>
+                        <a tabindex="-1" href="instructions.html#Data from Hikes/Observations">Hikes and Observations</a>
+                    </li>
+                    <li><a tabindex="-1 " href="instructions.html#Data from Trail Cameras ">Trail Cameras</a>
+                    </li>
+                    <li><a tabindex="-1 " href="instructions.html#Data from Study Site Checks ">Research Study Sites</a>
+                    </li>
+                </ul>
             </li>
             <li><a href="quicksubmit.html">Quick Submit</a>
             </li>
@@ -70,13 +84,25 @@
     </p>
     <p>
         <br>
-        <h3>4) What types of data does NYeBear collect?</h3> NYeBear collects data on the detection(presence) and non-detection(absence) of black bears across upstate New York, year round. If a bear is observed on a trail camera or on a hike, or if bear sign (hair, scat, pawprint) is observed, this is "detection" data. When no signs of bear are observed, this is "non-detection data". Both are equally important, because it helps us be confident about both where there are and where there arent bears. When you report data about a hike, your outdoor camera, or a visit to a research site, make sure you report all your data about when and where you did and didn't see bear!
+        <h3>4) What types of data does NYeBear collect?</h3> NYeBear collects data on the detection(presence) and non-detection(absence) of black bears across New York, year round. If a bear is observed on a trail camera or on a hike, or if bear sign (hair, scat, pawprint) is observed, this is "detection" data. When no signs of bear are observed, this is "non-detection data". Both are equally important, because it helps us be confident about both where there are and where there arent bears. When you report data about a hike, your outdoor camera, or a visit to a research site, make sure you report all your data about when and where you did and didn't see bear!
     </p>
     <p>
         <br>
         <h3>5) What do I do if I'm not sure what I saw was a bear or bear sign?</h3> There are two things you should do. First, look at <a href="recognizing.html"> Recognizing Bear Signs </a> to help you. There are also links to other resources. Second, when you submit your data, include in your comments if you are not sure. Finally, you can always <a href="contact.html"> contact </a> the researchers with a description and photos. Citizen science has the ability to collect large amounts of data, but methods also need to be in place to maintain the quality of the data too. This is one reason why we ask citizen scientists to submit photos of their observations - to verify uncertain observerations. The researchers will also help ensure data quality by following up on missing data and contacting citizen scientists.
 
     </p>
+
+    <h4>&nbsp;&nbsp;&nbsp;<u>Check out these Resources and Guides (takes you away from NYeBear) </u></h4>
+    <ul>
+        <li><a href="http://www.bear.org/website/bear-pages/black-bear/black-bear-sign.html"> The North American Bear Center</a>
+        </li>
+        <li><a href="http://www.wildernesscollege.com/american-black-bear-tracks.html"> The Alderleaf Wildnerness College</a>
+        </li>
+        <li><a href="http://www.nrmsc.usgs.gov/research/NDGBP_RubObjectBearSign.htm">Northern Rocky Mountain Science Center</a>
+        </li>
+        <li><a href="http://www.bear-tracker.com/bear.html">Bear-tracker.com</a>
+        </li>
+    </ul>
     <p>
         <br>
         <h3>6) How long does the NYeBear project run?</h3> NYeBear will potentially run for ~4 years, or longer. 2015 is the first year of the project, and it is a pilot year to finetune the project. This will be useful for researchers to learn how to make NYeBear successful for the course of the project. We encourage citizen scientists to participate for as long as possible, since this provides long-term continuous data.
@@ -94,5 +120,21 @@ Conservation&#39;s website </a> about black bears. To learn more about NYeBear a
 
     </div>
 </body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64657367-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </html>
