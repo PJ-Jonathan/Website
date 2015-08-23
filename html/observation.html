@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-md-10">
                     <h1>Submit Hikes and Observations</h1>
-                    <h2></h2>
+                    <h2><button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#QuickSubmit"'> Click here for Instructions</button></h2>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -40,27 +40,38 @@
     </div>
 
 
-    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#QuickSubmit"'>How to Submit Hikes and Observations</button>
+    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"></button><br><br>
+        
 <br><br>
 <form role="form" action="../php/submitObservation.php" method="POST" enctype="multipart/form-data">
 
-<h3>Email</h3>
+<h3> Your email address:</h3>
 <div class="form-group">
 <input type="email" class="form-control" id="email" name="email">
 </div>
 <br>
-<h3>Date and Time</h3>
+    <h3>This data submission is for: </h3>
+<div class="checkbox">
+<label><input type="radio" name="type" value="wDataSheet"> A hike <b>with</b> a Datasheet with GPS unit </label>
+</div>
+    <div class="checkbox">
+<label><input type="radio" name="type" value="noDataSheet"> A hike <b>without</b> a Datasheet or GPS unit </label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="type" value="Obs"> Observation of a bear/bear sign <b> but not from a hike</b></label>
+</div>
+
+   <br> 
 <div class="form-group">
-<label>Date of Observation/Hike</label>
+<label> <h3> Date of Hike/Observation </h3></label>
 <input type="date" class="form-control" id="date" name="date">
 </div>
 <div class="form-group">
-<label>Time of Observation/Hike</label>
+<label><h3> Time of Hike/Observation </h3></label>
 <input type="time" class="form-control" id="time" name="time">
 </div>
 <br><h3>Location</h3>
-    <h4> <p><i>Drag the pin in Google maps to your location. This will auto-fill the text fields.</p> <p> If you type in a location, the Google pin will update.</p></i></h4>
+    <h4><i><p> For a hike, drag the pin to the start of your hike.</p><p> For just an observation, drag the pin to the location of observation. </p></i></h4>
 
 <div id="us2" style="width: 500px; height: 400px;"></div>		
 <br>
@@ -88,40 +99,35 @@
     
     
     
-<br><h3>Type of Observation</h3>
+<br><h3>What did you observe?</h3> <h4> <i> Check all that apply.</i></h4>
 <div class="checkbox">
-<label><input type="radio" name="type" value="Sighting">Sighting</label>
+<label><input type="radio" name="type" value="None"> <b> No bear or signs</b></label>
+</div>
+    <div class="checkbox">
+<label><input type="radio" name="type" value="Sighting"> <b>Sighting of actual bear</b> </label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="Paw Print">Paw Print</label>
+<label><input type="radio" name="type" value="Paw Print"> <b>Tracks/Paw Print</b></label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="Hair">Hair</label>
+<label><input type="radio" name="type" value="Hair"> <b>Hair</b></label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="Scat">Scat</label>
+<label><input type="radio" name="type" value="Scat"> <b>Scat</b></label>
+</div>
+
+<br><h3>If you detected a bear or bear sign, how confident are you that it was from a black bear?</h3> 
+<div class="checkbox">
+<label><input type="radio" name="confidence" value="1"> <b>Low/Not at all</b> - Could be bear or many other species. </label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="None">None</label>
-</div>
-<br><h3>How confident are you that it was of a black bear?</h3> 
-<div class="checkbox">
-<label><input type="radio" name="confidence" value="1"> Not at all: Could be bear or many other species</label>
+<label><input type="radio" name="confidence" value="2"> <b>Medium/Somewhat </b>- Possibly bear or other large mammal (deer, dog, etc)</label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="confidence" value="2"> Somewhat: Possibly bear or other large mammal (deer, dog, etc)</label>
+    <label><input type="radio" name="confidence" value="3"> <b>High/Very</b> - Could only be bear</label>
 </div>
-<div class="checkbox">
-<label><input type="radio" name="confidence" value="3"> Very: Could only be bear.</label>
-</div>
-<!--
-<div class="checkbox">
-<label><input type="radio" name="confidence" value="4"> 4 - Confident</label>
-</div>
-<div class="checkbox">
-<label><input type="radio" name="confidence" value="5"> 5 - Very Confident</label>
-</div>-->
-<br><h3>Submit Photos or Hiking Datasheet</h3>
+
+<br><h3>Attach Hiking Datasheets, Photos, GPS files</h3>
 <input type="file" name="fileToUpload" id="fileToUpload">
 <br><h3>Comments about the Hike, Observation, or Photos:</h3>
     <h5><i>Any extra details? Did you observe other species of wildlife? </i></h5>

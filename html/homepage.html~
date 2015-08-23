@@ -1,6 +1,0 @@
-<html>
-<h1>You Are Now Logged In</h1>
-<a href="../php/logout.php">logout</a>
-
-
-</html>

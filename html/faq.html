@@ -8,25 +8,85 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script language="JavaScript" type="text/javascript">
-        if (document.getElementById) {
-            document.writeln('<style type="text/css"><!--')
-            document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
-            document.writeln('//--></style>')
-        }
 
-        function openClose(theID) {
-            if (document.getElementById(theID).style.display == "block") {
-                document.getElementById(theID).style.display = "none"
-            } else {
-                document.getElementById(theID).style.display = "block"
-            }
-        }
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
     </script>
+    <style>
+        outside_div {
+    padding: 5px;
+    border: 3px solid #9a2a2a;
+    margin: 0;
+    height: 800px;
+}
+        #a0 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 400px;
+        }
+        
+        #a1 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a2 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a3 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a4 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a5 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a6 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+        
+        #a7 {
+            border-radius: 25px;
+            border: 2px ;
+            padding: 20px;
+            width: 600px;
+            height: 550px;
+        }
+    </style>
 </head>
 
 
 <body style="margin:20px">
+
     <div class="jumbotron" style="
     padding: 0.9em 0.6em;
     h1 {
@@ -41,8 +101,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h1>NYeBear FAQ</h1>
-                    <h2></h2>
+                    <h1>FAQ</h1>
+                    <h3><i> To all your burning bear questions</i></h3>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -62,9 +122,6 @@
     </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                     <li>
-                        <a tabindex="-1" href="instructions.html#Top">General</a>
-                    </li>
-                    <li>
                         <a tabindex="-1" href="instructions.html#Hikes">Hikes </a>
                     </li>
                     <li><a tabindex="-1 " href="instructions.html#Cameras ">Trail Cameras</a>
@@ -83,83 +140,128 @@
             </li>
         </ul>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#answers div').hide();
+            $('#questions a').click(function () {
+                $('#answers div').hide();
+                $('#a' + $(this).attr("id")).fadeToggle("slow", "linear");
+            });
+        });
+    </script>
+
     <div class="row">
-        <div class="col-sm-6" id="NYeBear">
-            <div onClick="openClose('a1')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; What's the point of NYeBear? </b>
-            </div>
-            <div id="a1" class="texter">
-                The point of NYeBear is to collect lots of information about where bears are across New York (NY). Researchers can't be everywhere, so citizens (you!) send us information about their hikes and trail cameras about when you see and dont see bears.
-            </div>
 
-            <div onClick="openClose('a2')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; I want to help out! What kind of data does NYeBear collect?</b>
-            </div>
-            <div id="a2" class="texter">
-                <ol>
-                    <li>
-                        <B>Go on hikes! </B> Tell us about the location, time and duration, and route of your hike, and if you saw bears or bear signs, where and when.</li>
-                    <li> <b> Set a trail camera! </b> Tell us about the location of your camera, details about the brand and model, and whether your saw bears. </li>
+        <div class="col-sm-6" id="questions">
+            <h3> <b><u> Question:</u></b></h3>
+            <h4> <b> NYeBear </b>
+            <br/>
+            <a href="#" id="0" class="mybutton myblue"><b>&#9658; What's the point of NYeBear?</b></a>
+            <br/>
+            <a href="#" id="1" class="mybutton myblue"><b>&#9658; I want to help out! What kind of data does NYeBear collect?</b></a>
+            <br/>
+            <a href="#" id="2" class="mybutton myblue"><b> &#9658; I'm not sure what I saw was bear or bear sign. What do I do? </b></a>
+            <br/>
+            <a href="#" id="3" class="mybutton myblue"><b> &#9658; How long does NYeBear run? </b></a>
+            <br/>
+            <br/>
+            <b> Bears in New York</b>
+            <br/>
+            <a href="#" id="4" class="mybutton myblue"><b>&#9658;  So how many bears are in NY? </b></a>
+            <br/>
+            <a href="#" id="5" class="mybutton myblue"><b> &#9658; I've heard there are more bears now. Is that true? Why? </b></a>
+            <br/>
+            <a href="#" id="6" class="mybutton myblue"><b> &#9658; What is citizen science? Why use it to study black bears?</b></a>
+            <br/>
+            <a href="#" id="7" class="mybutton myblue"><b> &#9658; Where can I learn more about black bears?</b></a>
+            <br/>
+            </h4>
+        </div>
+        <h3> <b><u> Answer:</u></b></h3> <h4>
+        <outside_div class="col-sm-6" id="answers">
+            <div id="a0" class="mydivhide">
+              <b> NYeBear</b> collects data about  black bears across New York to help researchers estimate their population size and range distribution  in the state.<br>
+                <br>When citizens <b>go on hikes or set trail cameras</b>, they have the chance of seeing bears or bear signs. 
+                <br> <br>
+                <i><b> Become a  citizen scientists</b> </i> through NYeBear by submitting information about hikes and personal trail cameras. 
+                <br>
+                <br>
+                <br> <b>Join today</b> and contribute to wildlife research when you spend time outdoors.  NYeBear is accessible by internet, smartphone app, and post mail.</div>
+            <div id="a1" class="mydivhide">
+                 <b> It is easy to be a part of NYeBear!</b><br>
+               <br> <ol>
+                    <li>Go hiking and/or set up a trail camera on your property! </li>
+                    <li>Tell us whether or not you saw bears or bear signs (tracks, scat, or hair). </li>
+                    <li> We'll ask for details about your hike or camera, including <i> time, location, and photos</i>.</li>
                 </ol>
-                &nbsp;&nbsp;&nbsp; When you see bears or bear signs (hair, scat, pawprint), this is called a "detection".
-                <br/> &nbsp;&nbsp;&nbsp; When you dont see antyhing, it is called a "non-detection".
-                <br/> &nbsp;&nbsp;&nbsp; Both kinds of data are important, so be sure you <b>report everything </b>!
-                <br/> &nbsp;&nbsp;&nbsp; <i> (We wont share your contact, location, or other personal information!)</i>
-                <br/>
-            </div>
-
-            <div onClick="openClose('a3')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; I think I saw a bear or bear sign. I'm not sure. What do I do? </b>
-            </div>
-            <div id="a3" class="texter">
-                Awesome!
+              <u> This provides 2 kinds of data about bears and bear signs:</u> 
                 <ul>
-                    <li>Check out <a href="recognizing.html"> Recognizing Bear Signs </a>. There are also links to other resources.</li>
-                    <li> When you submit your data, rate your confidence. </li>
-                    <li> Include a picture of it with something like your hand or a coin for scale.</li>
-                    <li>You can always <a href="contact.html"> contact </a> the researchers with a description and photos. </li>
+                    <li>A <b><i> detection </i></b> is when you see bears or bear signs.</li>
+                    <li> A <b><i> non-detection </i></b> is when you dont see bear or bears signs.</li>
+                    <li><b><i>Both </i></b> are important, so be sure to report data even when you don't detect bears.
+                    </li>
                 </ul>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If we have questions about the data, we'll email you!
-            </div>
 
-            <div onClick="openClose('a4')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; How long is NYeBear? </b>
-            </div>
-            <div id="a4" class="texter">
-                NYeBear is year round (but bears den in the winter) and will run about 4 years total. We encourage citizen scientists to participate for as long as possible, since this provides long-term continuous data.
+                <br/> <font color="red"><i> Your privacy is important to us. We will not share your email, location, or other personal information.</i></font>
                 <br/>
-                <br/>2015 is the first year of the project, and it is a pilot year to finetune the project. If you have comments or suggestions, send them our way <a href="contact.html"> (contact  us)</a>!
             </div>
+            <div id="a2" class="mydivhide">
+              Sometimes bear sign can look it's from deer, dog, or other large mammals.
+                <br>
+                <br> There are several things you can do:
+                <br>
+                <ol>
+                    <li>Check out our <b><a href="recognizing.html"> Recognizing Bear Sign page.</a></b> There are also links to other resources.</li>
+                    <li><b>Rate your confidence</b> when you submit data. </li>
+                    <li> <b>Submit a picture</b> with something like your hand or a coin for scale.</li>
+                    <li>You can always <b><a href="contact.html"> contact </a></b> the researchers with a description and photos. </li>
+                </ol>
+                If we have questions about the data, we'll email you!</div>
 
-
-        </div>
-        <div class="col-sm-6" id="General">
-
-            <div onClick="openClose('a5')" style="cursor:hand; cursor:pointer"><b> <br />&#9660;  So how many bears are in New York? </b>
-            </div>
-            <div id="a5" class="texter">
-                We don't really know. The New York State Department of Environmental Conservation estimates about 6,000-8,000 : ~ 3,200 in the Adirondacks; ~ 1,800 in the Catskill region; and ~ 1,000 in central-western NY. An objective of NYeBear is to help the NYSDEC refine their estimates of population size and distribution of bears in the state.
+            <div id="a3" class="mydivhide">
+             NYeBear is a year-round project (but bears den in the winter).
+                <br>
+                <br> Citizen scientists can submit data in the spring, summer, fall, and even winter. We encourage continuous participation, since this provides long-term data.
+                <br>
+                <br>2015 is the first year of the project. It is a pilot year and if you have comments or suggestions, send them our way <a href="contact.html"> (contact  us)</a>!</div>
+            <div id="a4" class="mydivhide">
+               The New York State Department of Environmental Conservation (NYSDEC) estimates about 6,000-8,000 bears in New York. There are approximately:
+                <ul>
+                    <li> 3,200 in the Adirondacks</li>
+                    <li> 1,800 in the Catskill region</li>
+                    <li> 1,000 in central-western NY</li>
+                </ul> However, we don't know exactly how many bears there are, or where they are.
+                <br>
+                <br> An objective of NYeBear is to refine these estimates of population size and distribution of bears in the state. These results will also help researchers understand why and how the population is expanding. Ultimately, this will ensure that people and bears continue to co-exist in New York.
                 </p>
             </div>
-
-
-            <div onClick="openClose('a6')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; I've heard there are more bears in New York now. Is that true? Why? </b>
-            </div>
-            <div id="a6" class="texter"> Successful black bear management and more habitat that bears use. In the 1800s, bears in NY were hunted heavily and they lost a lot of forest to farms. In 1903, NY started protecting bears and regulating hunting. Now, bears are back! As the population continues to grow, the ranges have been expanding, especially into central NY. An objective of NYeBear is to help ascertain and refine the range description of bears in the state.</div>
-
-
-            <div onClick="openClose('a7')" style="cursor:hand; cursor:pointer"><b> <br />&#9660;  What is citizen science? Why use it to study  black bears in New York ?</b>
-            </div>
-            <div id="a7" class="texter"> Citizen science opens up research to everyone. Citizens can help form research questions and hypotheses, collect and analzye data, and share the findings. It is a great way to collect large amounts of data, over wide regions and long time periods. NYeBear depends on citizens to help collect data about bears because ~89% of land in NY is private - land that researchers would have difficulty getting data from.
+            <div id="a5" class="mydivhide">
+                The New York State Department of Environmental Conservation estimates that the bear population in NY is growing. This is primarily due to successful black bear management and the reversion of farmlands back to forest.
+                <br>
+                <br> In the 1800s, bears in NY were hunted heavily and many forests turned into farmland. In 1903, NY started protecting bears and regulating hunting. Now, bears are back! As the population continues to grow, the ranges have been expanding, especially into central NY. An objective of NYeBear is to help ascertain and refine the range description of bears in the state.
+                <br>
+                <br><i>This map shows the 3 historical ranges (Adirondacks, Catskill, and Allegany) that have now grown and expanded. The Adirondack Range is now called the Northern Black Bear Range, and the Catskill and Allegany Ranges have merged into the Southern Black Bear Range. Most of the estimated population growth and range expansion has been in the southern part of the state.</i>
+                <br>
+                <img src="FAQ_img1.png" height="300" width="400" style="float:center" />
             </div>
 
-            <div onClick="openClose('a8')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; Where can I learn more about black bears in New York?</b>
+            <div id="a6" class="mydivhide">
+               <b>Citizen science</b> is a way to conduct research that involves citizens and volunteers. Citizens can participate in any step of the scientific process, from deveoping research questions and hypotheses, to collecting and analyzing data, and even sharing the results. It is a great way to 1) involve different groups of people, 2) ask large-scale questions, and 3) help ensure that research remains relevant to the people that it affects.
+                <br>
+                <br><b>NYeBear</b> depends on citizens to help collect data about bears because ~89% of land in NY is private - land that researchers can't easily access or study.
+                <br>
+                <br> There are many successful citizen science projects around the globe. One of the earliest citizen science projects dates back to the 18th century in Finland, when the public documented the timing of bird migration. More recently, two examples of very successful ecological citizen science efforts include the <a href="https://www.pwrc.usgs.gov/bbS/"> Breeding Bird Survey </a>,and <a href="ebird.org/content/ebird">eBird</a>. You can find and learn more about citizen science projects at <a href="citsci.org">citsci.org</a> and <a href="https://www.zooniverse.org/#/">zooniverse.org</a>.
             </div>
-            <div id="a8" class="texter">
-                &nbsp;&nbsp;&nbsp; There are many resources black bears. Visit your local library, or search the internet!
-                <br /> &nbsp;&nbsp;&nbsp; For information specific to New York, visit the <a href="http://www.dec.ny.gov/animals/6960.html"> New York State Department of Environmental 
-Conservation&#39;s website </a> about black bears. To learn more about NYeBear and related research, you can visit the website of the graduate student organizing this research, <a href=http://catsun.squarespace.com> Cat Sun </a>.
-                </p>
-            </div>
-
-
+            <div id="a7" class="mydivhide"> 
+               There are many resources black bears. Visit your local library, or search the internet!
+                <br>
+                <br> For information specific to New York, visit the <a href="http://www.dec.ny.gov/animals/6960.html"> New York State Department of Environmental 
+Conservation&#39;s website </a> about black bears.
+                <br>
+                <br>To learn more about NYeBear and related research, visit the website of the graduate student organizing this research, <a href=http://catsun.squarespace.com> Cat Sun </a>.</div>
         </div>
+   </h4> </div>
     </div>
 
 
@@ -178,12 +280,7 @@ Conservation&#39;s website </a> about black bears. To learn more about NYeBear a
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-64657367-1', 'auto');
-    ga('send', 'pageview'); < div onClick = "openClose('a1')"
-    style = "cursor:hand; cursor:pointer" > < b > < br / > & #9660; 
-    </div>
-    <div id= "a1"
-    class = "texter" >
-        < /div>
+    ga('send', 'pageview');
 </script>
 
 </html>

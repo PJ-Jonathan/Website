@@ -9,6 +9,16 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .center-div {
+            margin: 0 auto;
+            padding: 1px;
+            width: 550px;
+            height: 100px;
+            border-radius: 3px;
+            border-color: crimson;
+        }
+    </style>
 </head>
 
 
@@ -28,7 +38,7 @@
             <div class="row">
                 <div class="col-md-10">
                     <h1>Quick Submit</h1>
-                    <h2> Hikes, trail cameras, and research sites</h2>
+                    <h3><font color="red"> <i>Report data even if you do not observe bears or bear signs. </i></font></h3>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -48,14 +58,9 @@
     </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                     <li>
-                        <a tabindex="-1" href="instructions.html#Top">General</a>
-                    </li>
-                    <li>
                         <a tabindex="-1" href="instructions.html#Hikes">Hikes </a>
                     </li>
                     <li><a tabindex="-1 " href="instructions.html#Cameras ">Trail Cameras</a>
-                    </li>
-                    <li><a tabindex="-1 " href="instructions.html#Monitor">Research Sites</a>
                     </li>
                 </ul>
             </li>
@@ -69,24 +74,21 @@
             </li>
         </ul>
     </div>
-    <center>
-        <h3>Thank you for being a NYeBear citizen scientist!  </h3>
-    </center>
-    <br/>
-    <h4> <ul>
-        <li> Before you submit data, please review the <a href="instructions.html"> Instructions</a>. </li>
-        <li> Need a  <a href="http://nyebear.org/hikesheet.pdf"> Hike Datasheet</a>? </li>
-       <li> <font color="red"> Report hikes and camera checks <i>even if you do not observe bears/signs </i>.</font></li>
-    </ul></h4>
-    <br/>
-    <br/>
+    <div class="center-div">
+        <h3><b>Thanks for being a NYeBear citizen scientist!</b></h3>
+          <h4>Click here to review the <a href="instructions.html"> Instructions</a>. <br/>
+         Print a <a href="http://nyebear.org/hikesheet.pdf"> Hike Datasheet</a> if not using the NYeBear mobile app.
+               </h4>
+      
+    </div>
+    <hr>
     <div class="row">
         <div class="col-sm-6" id="observation">
             <center>
                 <br>
                 <button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="observation.html"'>Submit my hike data</button>
-                <h4> 
-(Even if you did  <b> <i> not </i></b> see bear sign.)</h4>
+                <h4></h4>
+                <br/>
                 <img src="../res/quickSubmit_obs.png" class=".img-responsive" alt="Bear" width="100%"> </br>
                 <br>
                 <br>
@@ -96,8 +98,9 @@
         <div class="col-sm-6" id="trailCamera">
             <center>
                 <br>
-                <button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="trailCamera.html"'>Submit my trail camera data</button>
-                <h4> (Even if the camera did <b><i>not</i></b> capture a bear.)</h4>
+                <button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="trailCamera.html"'>Submit my camera data</button>
+                <h4></h4>
+                <br/>
                 <img src="../res/quickSubmit-camera.png" class=".img-responsive" alt="Trail Camera" width="100%">
                 <br>
                 <br>

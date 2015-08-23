@@ -29,8 +29,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h1>Submit Trail Camera Data</h1>
-                    <h2></h2>
+                    <h1>Submit Camera Data</h1>
+                    <h2><button  type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Cameras"'> Click here for instructions</button></h2>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -39,12 +39,12 @@
         </div>
     </div>
 
-    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"> </button><br><br>
-<button type="button" class="btn btn-warning" onclick='window.location.href="instructions.html#Data from Trail Cameras"'>How to Submit Trail Camera Data</button>
+    <button type="button" class="btn btn-default" onclick='window.location.href = "quicksubmit.html";'><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"></button><h4> </h4>
+
 <br>
 <form role="form" action="../php/submitTrailCam.php" method="POST"  enctype="multipart/form-data">
 <br>
-<h3>Email</h3>
+<h3>Your email address:</h3>
 <div class="form-group">
 <input type="email" class="form-control" id="email" name="email">
 </div>
@@ -67,28 +67,31 @@
 <input type="time" class="form-control" id="time" name="etime">
 </div>
     
-<br><h3>Camera Schedule</h3>
-<div class="checkbox">
-<label><input type="radio" name="schedule" value="24/7"> 24/7 </label>
-</div>
-<div class="checkbox">
-<label><input type="radio" name="schedule" value="Day"> Day</label>
-</div>
-<div class="checkbox">
-<label><input type="radio" name="schedule" value="Night"> Night</label>
-</div>
-<div class="checkbox">
-<label><input type="radio" name="schedule" value="Other"> Other</label>
-</div>
-
-    
-<br><h3>Any camera malfunctions?</h3>
+<br><h3> During that time, did the camera ever malfunction?</h3>
 <div class="checkbox">
 <label><input type="radio" name="malfunctioned" value="No"> No </label>
 </div>
 <div class="checkbox">
 <label><input type="radio" name="malfunctioned" value="Yes"> Yes</label>
 </div>
+    
+<br><h3>Camera Schedule</h3>
+<div class="checkbox">
+<label><input type="radio" name="schedule" value="24/7">  <b>24/7</b>- always on </label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="schedule" value="Day"> <b>Day only</b> </label>
+</div>
+<div class="checkbox">
+<label><input type="radio" name="schedule" value="Night"> <b> Night only </b></label>
+</div>
+<div class="checkbox">
+<label><input type="radio" namse="schedule" value="Other"> Other</label><div class="form-group"> Provide details:
+<textarea class="form-control" rows="7" name="comments"></textarea>
+</div>
+</div>
+
+    
 
 <br><h3>Brand and Model of Camera</h3>
 <div class="form-group">
@@ -97,13 +100,13 @@
 </div>
 
 <br><h3>Location</h3>
-        <h4> <p><i>Drag the pin in Google maps to your location. This will auto-fill the text fields.</p> <p> If you type in a location, the Google pin will update.</p></i></h4>
+    <h4> <p><i>Drag the pin to the location of your camera.</i></p></h4>
 
 <div id="us2" style="width: 500px; height: 400px;"></div>		
 <br>
-<label>Latitude of Observation or Start of Hike</label><input  class="form-control" type="text"  name="us2-lat" id="us2-lat"/>
+<label>Latitude of Camera</label><input  class="form-control" type="text"  name="us2-lat" id="us2-lat"/>
 <div class="form-group">
-<label>Longitude of Observation or Start of Hike</label><input class="form-control" type="text" name="us2-lon" id="us2-lon"/>
+<label>Longitude of Camera</label><input class="form-control" type="text" name="us2-lon" id="us2-lon"/>
 <script>$('#us2').locationpicker({
 	location: {latitude: 42.447581, longitude: -76.485010},	
 	radius: 0,
@@ -132,7 +135,6 @@
 <h3>If yes, please list the sightings:</h3>
 <h5>Use the format "Month/Day/Year Hour:Minuteam/pm" <br />Use a comma "," to separate sightings. e.g.: "6/20/15 5:00pm, 6/21/15 4:25am". <br />
 If you saw bears more than once in a day, count as 1 sighting. <br />
-<i>If you did not see any bears, leave this field blank.</i>
 <div class="form-group">
 <input type="text" class="form-control" id="sightings" name="sightings">
 </div>
@@ -143,7 +145,7 @@ If you saw bears more than once in a day, count as 1 sighting. <br />
 <div class="form-group">
 <textarea class="form-control" rows="7" name="comments"></textarea>
 </div><br>
-<button type="submit" class="btn btn-primary">Submit My Trail Camera Data</button>
+<button type="submit" class="btn btn-primary">Submit My Camera Data</button>
 </form><br><br>
 </div>
 </body>

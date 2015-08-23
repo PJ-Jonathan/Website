@@ -26,8 +26,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h1>Contact NYeBear</h1>
-                    <h2> </h2>
+                    <h1>Contact Us</h1>
+                    <h3> <i>Questions, Comments and Feedback</i> </h3>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -47,14 +47,9 @@
     </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                     <li>
-                        <a tabindex="-1" href="instructions.html#Top">General</a>
-                    </li>
-                    <li>
                         <a tabindex="-1" href="instructions.html#Hikes">Hikes </a>
                     </li>
                     <li><a tabindex="-1 " href="instructions.html#Cameras ">Trail Cameras</a>
-                    </li>
-                    <li><a tabindex="-1 " href="instructions.html#Monitor">Research Sites</a>
                     </li>
                 </ul>
             </li>
@@ -69,41 +64,88 @@
         </ul>
     </div>
     <br>
-    <div class="row">
-        <div class="col-sm-3 col-md-5">
-            <img src="../res/cat.png" align="center
-		" style="width:75%">
-        </div>
-        <div class="col-sm-3 col-md-6">
-            <p>
-                <h3>
-		My name is Cat Sun, and I am the graduate student at Cornell University in charge of NYeBear. I would love to hear from you!
-		</p>
-		<p>If you have any questions or comments, please use the form below. 
-		</p>
-		<p>
-		Dont forget to check out the <a href="faq.html"> FAQ </a> page.
-            	</div>
-</div>
+    <center>
+<h2> We will respond as soon as possible to you questions, comments, and feedback! <br>
+Dont forget to check out the <a href="faq.html"> FAQ page.</a></h2> </center>
+    <hr>
+          <div class="col-sm-3 col-md-6">
+    
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-<br><br>
-<form role="form" action="../php/contact.php" method="POST">
-  <div class="form-group">
-    <label for="name">Name:</label>
-    <input name = "name" type="name" class="form-control" id="name">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <center><img src="cat.jpg" alt="CatSun">
+                        </center>
+                        <div class="carousel-caption">
+                            <h4> Cat Sun <br>  NYeBear researcher. </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <center><img src="pj.jpg" alt="PJ_Finlay" >
+                        </center>
+                        <div class="carousel-caption">
+                            <h4> <font color ="white"> PJ Finlay<br> Android develope for NYeBear  </font></h4>
+                        </div>
+                    </div>
+                    <!-- Still need to add Jonathan -->
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+
+            </div>
+               <h3 style="margin-left:5;margin-left:5;"> <b>About the creators of NY eBear </b></h3>
+
+        <p style="margin-right:5;margin-left:5;"><b>Cat Sun </b> is a graduate student in the Department of Natural at Cornell University and <a href="http://www.coopunits.org/New_York/"> New York Cooperative Fish and Wildlife Research Unit. </a> She studies black bears in New York to better understand their population size, distribution across the state, and patterns of resource use. To develop NYeBear, she is collaborating with <b> PJ Finlay</b> and <b>Jonathan Gomes Selman</b>, who are currently students at Ithaca High School. PJ and Jonathan have developed the iOS and Android apps for NYeBear.</p><br>
+        <p><b> P.J. Finlay </b>is a rising senior at Ithaca High School in Ithaca NY. He learned Web/Android programming through a school club. During his free time he enjoys rowing on the varsity crew team, watching the news, and making his own Android apps.</p>
+        <p><b> Jonathan Gomes Selman</b>is a rising senior at Ithaca High School in Ithaca NY. He is an avid programmer and loves exploring the wilderness observing the wildlife. He has been designing iPhone applications for 2 years and is fluent in several programming languages. One of his passions is combining computer science with other fields of science to help researchers collect and analyze data.</p>
   </div>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input name = "email" type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="message">Message:</label>
-    <textarea name="message" class="form-control" rows="15"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-<!--End of all enclosing div-->
-</div>
+             
+              
+              
+   
+        <div class="col-sm-3 col-md-6">
+            
+            <form role="form" action="../php/contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input name="name" type="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input name="email" type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" class="form-control" rows="15"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--End of all enclosing div-->
+    </div>
 </body>
 <script>
     (function (i, s, o, g, r, a, m) {

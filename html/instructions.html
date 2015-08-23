@@ -8,38 +8,50 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script language="JavaScript" type="text/javascript">
-        if (document.getElementById) {
-            document.writeln('<style type="text/css"><!--')
-            document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
-            document.writeln('//--></style>')
-        }
-
-        function openClose(theID) {
-            if (document.getElementById(theID).style.display == "block") {
-                document.getElementById(theID).style.display = "none"
-            } else {
-                document.getElementById(theID).style.display = "block"
-            }
-        }
-    </script>
     <style>
-        .redline {
-            border-width: 2px;
-            border-color: #C00000;
-            border-style: solid;
+        #a0 {
+            border-radius: 25px;
+            border: 2px solid #c30505;
+            padding: 20px;
+            width: 500px;
+            height: 400px;
         }
         
-        div.one {
-            padding: 80px 20px;
+        #a1 {
+            border-radius: 25px;
+            border: 2px solid #c30505;
+            padding: 20px;
+            width: 500px;
+            height: 570px;
+        }
+        
+        #a2 {
+            border-radius: 25px;
+            border: 2px solid #c30505;
+            padding: 20px;
+            width: 500px;
+            height: 400px;
+        }
+        
+        #a3 {
+            border-radius: 25px;
+            border: 2px solid #c30505;
+            padding: 20px;
+            width: 500px;
+            height: 580px;
+        }
+        
+        #a4 {
+            border-radius: 25px;
+            border: 2px solid #c30505;
+            padding: 20px;
+            width: 500px;
+            height: 500px;
         }
     </style>
 
-
 </head>
 
-<a name="Top"></a>
 
 <body style="margin:20px">
 
@@ -58,7 +70,9 @@
             <div class="row">
                 <div class="col-md-10">
                     <h1>Instructions</h1>
-                    <h2> How to collect and submit data</h2>
+                    <h3> <font color="red"> <i>
+             Do not approach, feed, or harrass wildlife!
+                       </i></font></h3>
                 </div>
                 <div class="col-md-2">
                     <img src="http://nyebear.org/res/icon.png" height="150" width="150" style="float:right" />
@@ -78,14 +92,9 @@
     </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                     <li>
-                        <a tabindex="-1" href="instructions.html#Top">General</a>
-                    </li>
-                    <li>
                         <a tabindex="-1" href="instructions.html#Hikes">Hikes </a>
                     </li>
                     <li><a tabindex="-1 " href="instructions.html#Cameras ">Trail Cameras</a>
-                    </li>
-                    <li><a tabindex="-1 " href="instructions.html#Monitor">Research Sites</a>
                     </li>
                 </ul>
             </li>
@@ -99,198 +108,191 @@
             </li>
         </ul>
     </div>
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#answers div').hide();
+            $('#questions a').click(function () {
+                $('#answers div').hide();
+                $('#a' + $(this).attr("id")).fadeToggle("slow", "linear");
+            });
+        });
+    </script>
     <br/>
+    <center> <h3><i><b>Report data even when you do not see bear or bear signs. </b></i> </h3>  </center>
+    <hr>
     <div class="row">
-        <font color="red"> <div style="text-align:center"><i>
-            Do not approach, feed, or harrass wildlife.
-            Report data from hikes and cameras even when you do not see bear/signs.
-            our data are solely for research. We keep it secure and confidential.</i></div>
-    </font>
-
-    </div>
-    <div class="row">
-        <div class="col-sm-6 div.one" style="float:center;padding-left:50px;" id="observation">
-            <h3><b><u>You can be a part of NYeBear in 3 ways</u></b>:
-            <ol>
-
-                <li> <a href="#Hikes">Go on hikes</a>!
-                    <br/>
-                    <li> <a href="#Cameras">Set a trail camera </a>on your property!
-                        <li> <i> Coming soon:</i> Monitor research sites!
-            </ol>
-            </h3>
-        </div>
-        <div class="col-sm-6" id="observation">
-
+        <div class="col-sm-6" id="questions">
+            <a name="Hikes"></a>
+            <h3> <b>1. <u>Go On a Hike (3 ways)</b></u></h3>
+            <p> <b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*We recommend repeating hikes every few weeks for the same places*</i></b>
+            </p>
+            <a href="#" id="0" class="mybutton myblue"><b>&#9658; With the  NYeBear App</b> -  if you have a smartphone.</b></a>
             <br/>
-            <u><b> <a name="What to do if your see a bear"></a> If you see a bear in the wild</b></u>:
-            <ol>
-                <li>Stay calm.</li>
-                <li> Do not run. </li>
-                <li> Avoid eye contact with the bear.</li>
-                <li> Facing the bear, back away slowly.</li>
-                <li> If the bear approaches, make noise!</li>
-                <li> Consider carrying bear spray and make sure you know how use it properly.</li>
-            </ol>
+            <a href="#" id="1" class="mybutton myblue"><b>&#9658; With print-out datasheets</b> - if you don't have a smartphone but have a GPS unit.</b></a>
+            <br/>
+            <a href="#" id="2" class="mybutton myblue"><b> &#9658;  With Quick Submit </b>- if you do not have a smartphone or GPS unit.</a>
+            <br/>
+            <hr>
+            <a name="Cameras"></a>
+
+            <h3> <b> 2. <u>Set A Trail Camera (2 ways)</b></u></h3>
+            <p> <b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*We recommend submitting camera data frequently: once a week or biweekly* </i> </b>
+            </p>
+            <a href="#" id="3" class="mybutton myblue"><b>&#9658; With the  Quick Submit on this webpage</b> -  if you view at your photos on the computer.</b></a>
+            <br/>
+            <a href="#" id="4" class="mybutton myblue"><b> &#9658;  With the  NYeBear App</b> -  if you will not be at a computer.  </b></a>
+            <br/>
+<br/>
+            </h4>
+<h5> **<i>Data are solely for research purposes. We will never disclose your contact or location information. </i></h5>
+
+        </div>
+
+        <div class="col-sm-6" id="answers">
+
+            <div id="a0" class="mydivhide">
+                <h4> <font color="darkblue"><center> <u><b> Hikes: With the  NYeBear App</b></u></center></font></h4>
+                <ol>
+                    <li> <b>Download the NYeBear app.</b> </li>
+                    <li>
+                        Turn <b>ON</b> the "Start a Hike" function.</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This collects a datapoint every 10 minutes.
+                    <li> When you observe or detect bear/signs, go to
+                        <br/><b> "Report Data" > "Report an Observation"</b> </li>
+                    <li> Fill out the requested information: </li>
+                    <ul>
+                        <li> Only use <b>"Use current location" </b>if you are <i>at</i> the observation.</li>
+                        <li> <b>Check</b> all the signs that you observed.</li>
+                        <li><b> Rate</b> your confidence in identifying it as black bear.</li>
+                        <li> <b>Attach</b> photo(s) of your bear observation or sign. </li>
+                        <i>(Use your hand or a coin for scale.)</i>
+                        <li> Provide <b>comments</b> about your observation.</li>
+                    </ul>
+                    <li> <b>Submit!</b> </li>
+                    <li> When you finish your hike, turn <b>OFF</b> the "Start a Hike".</li>
+                </ol>
+            </div>
+            <div id="a1" class="mydivhide">
+                <h4> <font color="darkblue"><center> <u><b> Hikes: With print-out datasheets</b></u></center></font></h4>
+                <ol>
+                    <li>
+                        <a name="Using the Paper version"></a> <b>Before a hike:</b> </li>
+                    <ul>
+                        <li>Print out a <a href="http://nyebear.org/hikesheet.pdf"> Hike Datasheet. </a> </li>
+                        <li>Complete <b>"Before the hike"</b> and <b>"Citizen Scientist Information" </b>. </li>
+                        <li> Grab your GPS unit! </li>
+                    </ul>
+
+                    <li> <b>During a hike: </b>
+                    </li>
+                    <ul>
+
+                        <li> <b>Record</b> the start time and GPS location on the first row.</li>
+                        <li> At <b>10 minute intervals</b>, collect a GPS waypoint and fill out a row. </li>
+                        <li> <b>Fill out a new row when you detect a bear/bear sign.</b> </li>
+                        <li> Provide <b>comments</b> or thoughts about your hike, signs, or observations.</li>
+                    </ul>
+                    <li><b>After a hike:</b> </li>
+                    <ul>
+                        <li> Fill out <b>"After the hike"</b> at the top of the datasheet. </li>
+                        <li> <b>Submit </b> online at <a href="quicksubmit.html"> Quick Submit</a>. Include photos or GPS files. </li>
+                        <i> OR </i>
+                        <li> <b> Send</b> by mail to: &nbsp;&nbsp;&nbsp;&nbsp;NYeBear
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cornell University
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853 </li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="a2" class="mydivhide">
+                <h4> <font color="darkblue"><center> <u><b> Hikes: With Quick Submit </b></u></center></font></h4>
+
+                <ol>
+                    <li> Choose <b>"Submit my hike data"</b> on the <a href="quicksubmit.html"> Quick Submit</a> page.</li>
+                    <li> Provide your <b>email</b> so that we can contact you in case of questions.</li>
+                    <li> Tell us about your hike:</li>
+                    <ul>
+                        <li> <b>Date and start time</b> of your hike.</li>
+                        <li> <b>Start location </b> of your hike with Google Maps. Move the pin and zoom in as close as you can.</li>
+                        <li> Report any bear <b> observations or signs</b>.</li>
+                        <li> <b>Attach photo(s)</b> of your bear observation or sign. </li>
+                        <i>(Include your hand/ a coin/etc. in the photos for scale.)</i>
+                    </ul>
+                    <li> Provide any other<b> comments </b>about your observation.</li>
+                    <li> <b>Submit!</b> </li>
+                </ol>
+            </div>
+            <div id="a3" class="mydivhide">
+                <h4> <font color="darkblue"><center> <u><b>Trail Camera: With Quick Submit </b></u></center></font></h4>
+                <ol>
+                    <li> <b>Set up your trail camera</b> </li>
+                    Suggested Locations:
+                    <ul>
+                        <li> Aimed along a game trail</li>
+                        <li> Near fruit trees</li>
+                        <li> Along woods or forest edge</li>
+                    </ul>
+                    Placement:
+                    <ul>
+                        <li> Set ~4 ft above ground on tree/stand </li>
+                        <li> If camera is set high, aim camera towards ground</li>
+                        <li> Set date and timestamps according to operating manual.</li>
+                        <li> We suggest 3-5 photos per trigger, operating 24 hrs a day. </li>
+                    </ul>
+                    <li> <b>Set camera out for 1-2 weeks.</b> </li>
+                    <li> <b>Submit data</b>
+                    </li>
+                    <ul>
+                        <li> Choose <b>"Submit my camera data" </b> on the <a href="quicksubmit.html"> Quick Submit</a> page.</li>
+                        <li> Provide your <b>email</b> so we can contact you in case of questions.</li>
+
+                        <li> Tell us about your <b>camera</b>.</li>
+                        <li> Find your <b>camera location </b>using Google Maps. Zoom in as close as you can.</li>
+                        <li> <b>Report</b> which days the camera detected bears.
+                            <li> <b>Upload</b> your photos of the bears. Submit photos of other wildlife too!</li>
+                            <li> Provide any <b>comments</b> about the camera, bears or other wildlife.</li>
+                            <li> <b>Submit</b>!</li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="a4" class="mydivhide">
+                <h4> <font color="darkblue"><center> <u><b>Trail Camera: With NYeBear App </b></u></center></font></h4>
+                <ol>
+                    <li> Download the NYeBear app</li>
+                    <li> <b>Set up your trail camera</b> </li>
+                    Suggested Locations:
+                    <ul>
+                        <li> Aimed along a game trail</li>
+                        <li> Near fruit trees</li>
+                        <li> Along woods or forest edge</li>
+                    </ul>
+                    Placement:
+                    <ul>
+                        <li> Set ~4 ft above ground on tree/stand </li>
+                        <li> If camera is set high, aim camera towards ground</li>
+                        <li> Set date and timestamps according to operating manual.</li>
+                        <li> We suggest 3-5 photos per trigger, operating 24 hrs a day. </li>
+                    </ul>
+                    <li> <b>Set camera out for 1-2 weeks.</b> </li>
+                    <li> <b>Submit data</b>
+                    </li>
+                    <ul>
+                        <li> Go to<b> "Report Data" > "Report Camera Data"</b>.</li>
+                        <li> Tell us about your camera: </li>
+                        <ul>
+                            <li> Only <b>"Use current location"</b> if you are <i>at</i> your camera. </li>
+                        </ul>
+
+                        <li> <b>Attach</b> photos/videos from the site or your camera. </li>
+                        <li> Provide any other <b>comments</b> about your camera check.</li>
+                        <li><b> Submit</b>!
+                    </ul>
+
+                </ol>
+            </div>
         </div>
     </div>
-
-
-    <br/>
-    <br/>
-
-
-    <hr>
-
-    <br/>
-
-
-
-    <a name="Hikes"></a>
-    </i>
-    <h3>1. <u>Go On Hikes (3 ways)</u></h3> <font <br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*We recommend repeating hikes every few weeks to collect data for the same places*</i>
-
-    <div onClick="openClose('a1')" style="cursor:hand; cursor:pointer"><b><br />&#9660; With the  NYeBear App</b>: Use this if you have a smartphone. </div>
-    <div id="a1" class="texter">
-        <ol>
-            <li>
-                <a name="Hike_App"></a>Turn <b>ON</b> the "Start a Hike" function.</li>
-            <ul>
-                <li> It is never too late to start a hike, even if you forgot to do this until you had an observation to report!</li>
-            </ul>
-            <li> When you observe a bear/ signs go to "Report Data" > "Report an Observation".</li>
-            <li> Fill out the requested information: </li>
-            <ol type="a">
-                <li> Only use "Use current location" if you are at the actual observation.</li>
-                <li> Check all the signs that you observed.</li>
-                <li> Rate how confident you are about the sign being from black bear</li>
-                <li> Attach photo(s) of your bear observation or sign.</li>
-                <li> Provide any other comments about your observation.</li>
-                <li> Submit! Congratulations!</ol>
-            </li>
-            <li> When you finish your hike, turn <b>OFF</b> the "Start a Hike"/"Track Hiking" function.</li>
-        </ol>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9651; <a href="#Top">Back to top of page </a>
-        <br />
-
-    </div>
-
-    <div onClick="openClose('a2')" style="cursor:hand; cursor:pointer"><b> <br />&#9660; With print-out datasheets</b>: If you don't have a smartphone, print out a <a href="http://nyebear.org/hikesheet.pdf"> paper version </a> and take a GPS unit out with you.
-    </div>
-    <div id="a2" class="texter">
-        <ol>
-            <li>
-                <a name="Using the Paper version"></a>Print out a <a href="http://nyebear.org/hikesheet.pdf"> Hike Datasheet </a>. </li>
-            <li> Before you hit the trail/hike, fill out <b>"Before the hike"</b> and <b>"Citizen Scientist Information" </b> on the datasheet.</li>
-            <li> When you start your hike, record the start time and GPS coordinates on the first row.</li>
-            <li> At 10 minute intervals, fill out a row in the datasheet </li>
-           <li> When you see bear/bear sign fill out a new row.</li>
-            <li> When you are finished, provide any comments or thoughts about your hike or any bear signs or observations,</li>
-            <li> Fill out <b>"After the hike"</b> at the top of the datasheet.
-                <li> Mail the form back to us, or submit it online by with the  <a href="quicksubmit.html"> Quick Submit</a> below:
-                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;ATTN: Cat Sun
-                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;NYeBear
-                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;302 Fernow Hall
-                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;Cornell University
-                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;Ithaca NY 14853
-                    <br />
-        </ol>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9651; <a href="#Top">Back to top of page </a>
-        <br />
-    </div>
-
-    <div onClick="openClose('a3')" style="cursor:hand; cursor:pointer"><b><br/> &#9660; With the Quick Submit on this website</b>: If you didnt have your smartphone or a hike datasheet.</div>
-    <div id="a3" class="texter">
-        </i>
-        </h4>
-        </p>
-        <ol>
-            <li></a> On the <a href="quicksubmit.html"> Quick Submit</a> page, choose "Submit my hike data" .</li>
-            <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.</li>
-            <li> Then, provide the date and start time of your hike or observation.</li>
-            <li> Fill out the remaining data.</li>
-            <li> Using Google Maps, move the pin to your where you started the hike.Zoom in as close as you can.</li>
-            <li> We recommend attaching photo(s) of your bear observation or sign.Include your hand, a coin or something in the photos for scale.</li>
-            <ul>
-                <li> Upload a scanned copy of your datasheet.</li>
-            </ul>
-            <li> Provide any other comments about your observation.</li>
-            <li> Submit! Congratulations!</li>
-        </ol>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9651; <a href="#Top">Back to top of page </a>
-        <br />
-    </div>
-
-    <hr>
-
-    <br />
-
-    <a name="Cameras"></a>
-    <h3>2. <u>Set A Trail Camera (2 ways)</u></h3>
- <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*We recommend submitting camera data frequently: once a week or biweekly** </i>
-    </font>
-    <div onClick="openClose('a4')" style="cursor:hand; cursor:pointer"><b> <br/>&#9660; With the  Quick Submit on this webpage</b>: This is easiest. </div>
-    <div id="a4" class="texter">
-        <ol>
-            <li> On the <a href="quicksubmit.html"> Quick Submit</a> page, choose "Submit my camera data".</li>
-            <li> <b>Fill out your email</b> so that we can contact you in case you/we have questions.</li>
-            <li> Then, provide the dates and times of the camera period you are reporting.</li>
-            <li> Fill out the remaining data about your camera.</li>
-            <li> Using Google Maps, move the pin to your camera location. Zoom in as close as you can.</li>
-            <li> Report which days the camera detected bears.
-                <li> Upload us your photos of the bears. Submit photos of other wildlife too!</li>
-                <li> Provide any comments about the camera, bears or other wildlife.</li>
-                <li> Submit! Congratulations</li>
-        </ol>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9651; <a href="#Top">Back to top of page </a>
-    </div>
-
-    <br/>
-
-    <div onClick="openClose('a5')" style="cursor:hand; cursor:pointer"><b>&#9660; With the  NYeBear App</b>: Use this if you will not be at a computer with your camera data </div>
-    <div id="a5" class="texter">
-        <a name="Cam_App"></a>
-        <ol>
-            <li> On the home page, "Report Data" > "Report Camera Data".</li>
-            <li> Fill out the requested information: </li>
-            <ol type="a">
-                <li> Only "Use current location" if you are <b>at</b> your camera. </li>
-                <li> Fill out the information about your camera./li>
-            </ol>
-
-            <li> If your camera connects to you phone, attach your photos/videos. </li>
-            <li> Provide any other comments about your camera check.</li>
-            <li> Submit! Congratulations!</ol>
-        </li>
-        </ol>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9651; <a href="#Top">Back to top of page </a>
-        <br />
-    </div>
-
-
-
-
-
-    <hr>
-
-    <br />
-	<div style="display:none">
-    <a name="Monitor"></a>
-    <h3>3. <u>Monitor A Research Study Site</u></h3>
-    <p><i> still in development - stay tuned! </i>
-    </p>
-</div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<br/>
 </body>
 <script>
     (function (i, s, o, g, r, a, m) {
