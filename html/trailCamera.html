@@ -124,6 +124,27 @@
         
 </script>	
 <br>
+
+<h5>OR</h5>
+<label>Approximate Address</label><input  class="form-control" type="text" id="address"/>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+
+$("#address").keyup(function(){
+
+  var geocoder = new google.maps.Geocoder();
+  var address = document.getElementById('address').value
+  geocoder.geocode( { 'address': address}, function(results, status) {
+
+    if (status == google.maps.GeocoderStatus.OK) {
+      document.getElementById('us2-lat').value = results[0].geometry.location.lat();
+      document.getElementById('us2-lon').value = results[0].geometry.location.lng();
+    }
+  });
+
+
+});
+</script>
 <h3> Were there bears on your camera?</h3>
 <div class="checkbox">
 <label><input type="radio" name="bears" value="Yes"> Yes </label>
