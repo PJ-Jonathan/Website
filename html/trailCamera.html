@@ -80,14 +80,14 @@
 <label><input type="radio" name="schedule" value="24/7">  <b>24/7</b>- always on </label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="schedule" value="Day"> <b>Day only</b> </label>
+<label><input type="radio" name="schedule" value="Day"> <b>Morning and Day only</b> </label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="schedule" value="Night"> <b> Night only </b></label>
+<label><input type="radio" name="schedule" value="Night"> <b> Evening and Night only </b></label>
 </div>
 <div class="checkbox">
-<label><input type="radio" namse="schedule" value="Other"> Other</label><div class="form-group"> Provide details:
-<textarea class="form-control" rows="7" name="comments"></textarea>
+<label><input type="radio" namse="schedule" value="Other"> <b>Other</b></label><div class="form-group">
+<textarea class="form-control" rows="7" name="comments">Please describe your camera schedule</textarea>
 </div>
 </div>
 
@@ -99,14 +99,14 @@
 <b>Model</b><input type="text" class="form-control" id="model" name="model">
 </div>
 
+    
 <br><h3>Location</h3>
-    <h4> <p><i>Drag the pin to the location of your camera.</i></p></h4>
 
-<div id="us2" style="width: 500px; height: 400px;"></div>		
-<br>
-<label>Latitude of Camera</label><input  class="form-control" type="text"  name="us2-lat" id="us2-lat"/>
+    <div class="col-sm-3 col-md-6"> Provide either:
+        <br>
+<label> 1) Latitude of Camera </label><input  class="form-control" type="text" id="us2-lat" name="longitude"/>
 <div class="form-group">
-<label>Longitude of Camera</label><input class="form-control" type="text" name="us2-lon" id="us2-lon"/>
+<label>Longitude of Camera </label><input class="form-control" type="text" id="us2-lon" name="latitude"/>
 <script>$('#us2').locationpicker({
 	location: {latitude: 42.447581, longitude: -76.485010},	
 	radius: 0,
@@ -123,11 +123,10 @@
             });
         
 </script>	
-<br>
 
 <h5>OR</h5>
-<label>Approximate Address</label><input  class="form-control" type="text" id="address"/>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<label> 2) Approximate location of Camera </label><input  class="form-control" type="text" id="address"/>
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
 <script type="text/javascript">
 
 $("#address").keyup(function(){
@@ -142,9 +141,16 @@ $("#address").keyup(function(){
     }
   });
 
-
 });
-</script>
+</script>    
+        </div></div>
+    <div class="col-sm-3 col-md-6">
+     <h5>OR <b>3) <i>Drag the pin to your camera. Zoom in for accuracy.</i></b></h5>
+
+<div id="us2" style="width: 500px; height: 400px;"></div>		
+    </div>
+    
+
 <h3> Were there bears on your camera?</h3>
 <div class="checkbox">
 <label><input type="radio" name="bears" value="Yes"> Yes </label>
@@ -153,18 +159,19 @@ $("#address").keyup(function(){
 <label><input type="radio" name="bears" value="No"> No</label>
 </div>
 <br>
-<h3>If yes, please list the sightings:</h3>
-<h5>Use the format "Month/Day/Year Hour:Minuteam/pm" <br />Use a comma "," to separate sightings. e.g.: "6/20/15 5:00pm, 6/21/15 4:25am". <br />
-If you saw bears more than once in a day, count as 1 sighting. <br />
+<h3> If yes, please list the sightings:</h3>
+<h5>- If you saw bears more than once in a day, count as 1 sighting. <br> <i>
+    - Use the format "Month/Day/Year    Hour:Minuteam/pm" <br>
+    - Use a comma "," to separate sightings. e.g.: "6/20/15 5:00pm, 6/21/15 4:25am".</i>
+    </h5>
 <div class="form-group">
-<input type="text" class="form-control" id="sightings" name="sightings">
+    <input type="text" class="form-control" id="sightings" name="sightings">
 </div>
 <br><h3>Upload Photos from your Camera</h3>
 <input type="file" name="fileToUpload" id="fileToUpload"><br>
-<br><h3>Comments about the Camera or Photos:</h3>
-<h5><i>Any extra details? Did you observe other species of wildlife? </i></h5>
+<br><h3>Comments about Camera or Photos:</h3>
 <div class="form-group">
-<textarea class="form-control" rows="7" name="comments"></textarea>
+<textarea class="form-control" rows="7" name="comments">Any extra details? Did you observe other species of wildlife?</textarea>
 </div><br>
 <button type="submit" class="btn btn-primary">Submit My Camera Data</button>
 </form><br><br>

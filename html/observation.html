@@ -52,13 +52,13 @@
 <br>
     <h3>This data submission is for: </h3>
 <div class="checkbox">
-<label><input type="radio" name="type" value="wDataSheet"> A hike <b>with</b> a Datasheet with GPS unit </label>
+<label><input type="radio" name="type" value="wDataSheet"> A hike <b>with</b> a Datasheet with GPS points </label>
 </div>
     <div class="checkbox">
-<label><input type="radio" name="type" value="noDataSheet"> A hike <b>without</b> a Datasheet or GPS unit </label>
+<label><input type="radio" name="type" value="noDataSheet"> A hike <b>without</b> a Datasheet/GPS points </label>
 </div>
 <div class="checkbox">
-<label><input type="radio" name="type" value="Obs"> Observation of a bear/bear sign <b> but not from a hike</b></label>
+<label><input type="radio" name="type" value="Obs">  Observation of a bear/bear sign <b> but not from a hike</b></label>
 </div>
 
    <br> 
@@ -71,14 +71,12 @@
 <input type="time" class="form-control" id="time" name="time">
 </div>
 <br><h3>Location</h3>
-    <h4><i><p> For a hike, drag the pin to the start of your hike.</p><p> For just an observation, drag the pin to the location of observation. </p></i></h4>
 
-<div id="us2" style="width: 500px; height: 400px;"></div>		
-<br>
-<h5>OR</h5>
-<label>Latitude of Observation or Start of Hike</label><input  class="form-control" type="text" id="us2-lat" name="longitude"/>
+    <div class="col-sm-3 col-md-6"> Provide either:
+        <br>
+<label> 1) Latitude of Start of Hike </label><input  class="form-control" type="text" id="us2-lat" name="longitude"/>
 <div class="form-group">
-<label>Longitude of Observation or Start of Hike</label><input class="form-control" type="text" id="us2-lon" name="latitude"/>
+<label>Longitude of Start of Hike </label><input class="form-control" type="text" id="us2-lon" name="latitude"/>
 <script>$('#us2').locationpicker({
 	location: {latitude: 42.447581, longitude: -76.485010},	
 	radius: 0,
@@ -97,8 +95,8 @@
 </script>	
 
 <h5>OR</h5>
-<label>Approximate Address</label><input  class="form-control" type="text" id="address"/>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<label> 2) Approximate Address of Start of Hike</label><input  class="form-control" type="text" id="address"/>
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
 <script type="text/javascript">
 
 $("#address").keyup(function(){
@@ -113,12 +111,17 @@ $("#address").keyup(function(){
     }
   });
 
-
 });
 </script>    
+        </div></div>
+    <div class="col-sm-3 col-md-6">
+     <h5>OR <b> 3) <i>Drag the pin to the start of your hike. Zoom in for accuracy.</i></b></h5>
+
+<div id="us2" style="width: 500px; height: 400px;"></div>		
+    </div>
     
     
-    
+
 <br><h3>What did you observe?</h3> <h4> <i> Check all that apply.</i></h4>
 <div class="checkbox">
 <label><input type="radio" name="type" value="None"> <b> No bear or signs</b></label>
@@ -135,8 +138,7 @@ $("#address").keyup(function(){
 <div class="checkbox">
 <label><input type="radio" name="type" value="Scat"> <b>Scat</b></label>
 </div>
-
-<br><h3>If you detected a bear or bear sign, how confident are you that it was from a black bear?</h3> 
+    <br><h3>If you detected a bear or bear sign, how confident are you that it was from a black bear?</h3> 
 <div class="checkbox">
 <label><input type="radio" name="confidence" value="1"> <b>Low/Not at all</b> - Could be bear or many other species. </label>
 </div>
@@ -146,13 +148,12 @@ $("#address").keyup(function(){
 <div class="checkbox">
     <label><input type="radio" name="confidence" value="3"> <b>High/Very</b> - Could only be bear</label>
 </div>
-
-<br><h3>Attach Hiking Datasheets, Photos, GPS files</h3>
+<br><h3>Attach Hiking Datasheets, Photos, and any GPS files from your GPS unit </h3>
 <input type="file" name="fileToUpload" id="fileToUpload">
 <br><h3>Comments about the Hike, Observation, or Photos:</h3>
-    <h5><i>Any extra details? Did you observe other species of wildlife? </i></h5>
+    <h4>For a hike with no Datasheet/GPS unit, provide distance hiked and time spent hiking.</h4>
 <div class="form-group">
-<textarea class="form-control" rows="7" name="comments"></textarea>
+<textarea class="form-control" rows="7" name="comments">Any extra details? Did you observe other species of wildlife?  </textarea>
 <br>
 <button type="submit" class="btn btn-primary">Submit My Observation/Hike</button>
 </form></div>
